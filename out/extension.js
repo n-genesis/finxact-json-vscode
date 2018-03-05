@@ -8,11 +8,6 @@ function activate(context) {
     //create variables for cutting down on chain
     var currentWindow = vscode.window;
     var currentTextEditor = currentWindow.activeTextEditor;
-    //NEED TO FIX: Repeating code
-    if (currentWindow && currentTextEditor.document.languageId === 'json') {
-        //Uncomment notice below for version releace
-        currentWindow.showInformationMessage('Finxact JSON Formater v2.0.0');
-    }
     //Lets create a keybinding function
     let disposable = vscode.commands.registerCommand('extension.finxactFormat', () => {
         var editor = vscode.window.activeTextEditor;
