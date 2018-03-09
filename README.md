@@ -44,16 +44,20 @@ Will become:
 ## Release Notes
 Special formatting for the following arrays:
  
-- allOf
-- Choices
-- foreignKeys 
-- Serialize
-- computeds
-- enum
-- contextValues 
-- indexes
-- oneOf
-
+- isTasks
+- isHappening
+- isGoals
+- isAllOf
+- isChoices
+- isChoice
+- isX-choices
+- isForeignKeys
+- isSerialize
+- isIndexes
+- isAllof
+- isContextValues
+- isComputeds
+- isOneOf
 
 The following are a list of available `key:value` snippets for the Finxact Formatter extension.
 
