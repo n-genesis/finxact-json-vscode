@@ -11,7 +11,7 @@ Formats JSON files using Finxact JSON schema rules.
 
 For different platform you should find the `.vscode/extensions` directory it in the following locations:
 ```
-Windows %USERPROFILE%\\.vscode\\extensions
+Windows %USERPROFILE%\.vscode\extensions
 Mac ~/.vscode/extensions
 Linux ~/.vscode/extensions
 ```
@@ -108,7 +108,8 @@ Key values pairs found in Block Level 2+. Many general tags are child key:values
 
 ### 2.5.0
 - Better closing bracket alignment
-- Resrtucture of extension classes
+- Resrtucture of extension classes *
+- Special keyname formatting for array and objects
 
 ### 2.0.0
 - JSON no longer breaks with special array syntax.
