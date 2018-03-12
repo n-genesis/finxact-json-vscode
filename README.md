@@ -109,7 +109,6 @@ Key values pairs found in Block Level 2+. Many general tags are child key:values
 ### 2.5.0
 - Better closing bracket alignment
 - Resrtucture of extension classes
-- I guess it's better
 
 ### 2.0.0
 - JSON no longer breaks with special array syntax.
