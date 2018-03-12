@@ -28,7 +28,7 @@ To format a JSON file simply Right click and select “Finxact JSON Schema” or
 
 ## Known Issues
 
-(2.5.0)
+### (2.5.0)
 
 Depending on the the length of the keyname in a level blocks the current colon alignment maybe calculated (added spaces) to less then the previous level block. 
 
