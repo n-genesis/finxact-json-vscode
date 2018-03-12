@@ -27,6 +27,11 @@ To format a JSON file simply Right click and select “Finxact JSON Schema” or
 > **Recommended:** To make it a little easier when editing it really helps to first default format the file so when adding new values the cursor is a little more predictable in its positioning for new lines.
 
 ## Known Issues
+
+(2.5.0)
+
+Depending on the the length of the keyname in a level blocks the current colon alignment maybe calculated (added spaces) to less then the previous level block. 
+
 Empty objects will remove following brackets and child properties and only return the keyname. Ex:
 ```
 "properties": { 
