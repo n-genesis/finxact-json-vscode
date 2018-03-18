@@ -106,6 +106,8 @@ Key values pairs found in Block Level 2+. Many general tags are child key:values
 |originSource	|`originSource`		|`"originSource": {`<br>&nbsp;&nbsp;&nbsp;`key: value`<br>`}`	|
 
 ## Fixed issue #
+### 2.5.1
+- Short keyname alignment now is push passed open bracket
 
 ### 2.5.0
 - Better closing bracket alignment
