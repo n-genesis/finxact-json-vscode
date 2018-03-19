@@ -52,10 +52,7 @@ Will become:
 ### (2.5.1)
 
 Special formatting for the following arrays:
- 
-- tasks
-- happening
-- goals
+
 - allOf
 - choices
 - choice
