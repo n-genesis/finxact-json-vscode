@@ -2,7 +2,7 @@
 
 This is the README for the extension "finxact-json-formatter".
 
-###Features
+### Features
 Formats JSON files using Finxact JSON schema rules.
 
 ## Installation
