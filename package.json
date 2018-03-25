@@ -20,7 +20,7 @@
         "commands": [
             {
                 "command": "extension.finxactFormat",
-                "title": "Finxact JSON Schema"
+                "title": "Finxact JSON Format"
             }
         ],
         "keybindings": [
