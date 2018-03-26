@@ -5,6 +5,9 @@ This is the README for the extension "finxact-json-formatter".
 ### Features
 Formats JSON files using Finxact JSON schema rules.
 
+## Screenshot
+![](https://drive.google.com/uc?export=view&id=19r86_PTE2WxSEK1qLeotJYutsj207tbd).
+
 ## Installation
 
 [Confluence Setup page](https://finxact.atlassian.net/wiki/spaces/PE/pages/190316569/VSCode+Finxact+Formatter+Extension)
