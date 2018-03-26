@@ -77,7 +77,7 @@ Key value pairs found in Block Level 1.
 |id				|`id`         		|`"id": value`  								|
 |title			|`title`         	|`"title": value`            					|
 |type          	|`type`         	|`"type": value`                    			|
-|type array     |`type array`       |`"type": [`<br/>&nbsp;&nbsp;&nbsp;`value`<br>`]`|
+|type array     |`type array`       |`"type": [value]`								|
 |description	|`description`      |`"description": value`                   		|
 |array		 	|`array`         	|`"id": value`                    				|
 |x-createDt		|`'createDt`        |`"x-createDt": value`                    		|
@@ -96,12 +96,12 @@ Key values pairs found in Block Level 2+. Many general tags are child key:values
 |minimum     	|`minimum`         	|`"minimum": value`                    							|
 |maximum     	|`maximum`       	|`"maximum": value`												|
 |maxLength		|`maxLength`      	|`"maxLength": value`                   						|
-|_Id		 	|`_Id`         		|`"_Id": {`<br>&nbsp;&nbsp;&nbsp;`key: value`<br>`}`			|
-|logRef			|`logRef`			|`"logRef": {`<br>&nbsp;&nbsp;&nbsp;`key: value`<br>`}`			|
-|logRef blank	|`logRef blank`		|`"logRef": {`<br>&nbsp;&nbsp;&nbsp;`value`<br>`}`				|
-|orderType		|`orderType`		|`"orderType": {`<br>&nbsp;&nbsp;&nbsp;`key: value`<br>`}`		|
-|orderSource	|`orderSource`		|`"orderSource": {`<br>&nbsp;&nbsp;&nbsp;`key: value`<br>`}`	|
-|originSource	|`originSource`		|`"originSource": {`<br>&nbsp;&nbsp;&nbsp;`key: value`<br>`}`	|
+|_Id		 	|`_Id`         		|`"_Id": {key: value}`											|
+|logRef			|`logRef`			|`"logRef": {key: value}`										|
+|logRef blank	|`logRef blank`		|`"logRef": {value}`											|
+|orderType		|`orderType`		|`"orderType": {key: value}`									|
+|orderSource	|`orderSource`		|`"orderSource": {key: value}`									|
+|originSource	|`originSource`		|`"originSource": {key: value}`									|
 
 ## Fixed issue #
 ### 2.5.1
