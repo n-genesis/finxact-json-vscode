@@ -26,7 +26,7 @@ Linux ~/.vscode/extensions
 4. Make sure to restart VS Code for the extension to be added.
 
 ## Using Formatter
-To format a JSON file simply Right click and select �Finxact JSON Schema� or press (Ctrl+Alt+P).
+To format a JSON file simply Right click and select "Finxact JSON Format" or press (Ctrl+Alt+P).
 
 > **Recommended:** To make it a little easier when editing it really helps to first default format the file so when adding new values the cursor is a little more predictable in its positioning for new lines.
 
