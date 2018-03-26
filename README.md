@@ -25,14 +25,12 @@ Linux ~/.vscode/extensions
 3. After cloning you can choose to rename the `vs-code` folder to `finxact-formatter/` but this is optional.
 4. Make sure to restart VS Code for the extension to be added.
 
-## using Formatter
+## Using Formatter
 To format a JSON file simply Right click and select “Finxact JSON Schema” or press (Ctrl+Alt+P).
 
 > **Recommended:** To make it a little easier when editing it really helps to first default format the file so when adding new values the cursor is a little more predictable in its positioning for new lines.
 
 ## Known Issues
-
-### (2.5.0)
 
 Depending on the the length of the keyname in a level blocks the current colon alignment maybe calculated (added spaces) to less then the previous level block. 
 
@@ -58,7 +56,7 @@ Special formatting for the following arrays:
 
 - allOf
 - choices
-- choice
+- choice (is used in some json files)
 - x-choices
 - foreignKeys
 - serialize
@@ -79,7 +77,7 @@ Key value pairs found in Block Level 1.
 |id				|`id`         		|`"id": value`  								|
 |title			|`title`         	|`"title": value`            					|
 |type          	|`type`         	|`"type": value`                    			|
-|type array     |`type array`       |`"type": [`<br>&nbsp;&nbsp;&nbsp;`value`<br>`]`|
+|type array     |`type array`       |`"type": [`\&nbsp;&nbsp;&nbsp;`value\]`|
 |description	|`description`      |`"description": value`                   		|
 |array		 	|`array`         	|`"id": value`                    				|
 |x-createDt		|`'createDt`        |`"x-createDt": value`                    		|
