@@ -3,7 +3,7 @@
     "displayName": "Finxact json formatter",
     "description": "Format json files using Finxact schema",
     "version": "2.5.1",
-    "publisher": "Finxact - Andrew Garber",
+    "publisher": "andrewgarber",
     "icon": "images/icon.png",
     "engines": {
         "vscode": "^1.0.0"
