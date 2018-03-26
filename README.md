@@ -50,8 +50,6 @@ Will become:
 
 ## Release Notes
 
-### (2.5.1)
-
 Special formatting for the following arrays:
 
 - allOf
