@@ -32,7 +32,7 @@ To format a JSON file simply Right click and select "Finxact JSON Format" option
 
 ## Known Issues
 
-For Error Notice shown when there's a syntax error the line number of syntax error is not determined solely by JSON file's line numbers.
+For the Error Notice shown when there's a syntax error the line number of syntax error is not determined solely by JSON file's line numbers.
 
 Empty objects will remove following brackets and child properties and only return the keyname. Ex:
 ```
