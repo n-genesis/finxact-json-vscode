@@ -77,7 +77,7 @@ Key value pairs found in Block Level 1.
 |id				|`id`         		|`"id": value`  								|
 |title			|`title`         	|`"title": value`            					|
 |type          	|`type`         	|`"type": value`                    			|
-|type array     |`type array`       |`"type": [`\&nbsp;&nbsp;&nbsp;`value\]`|
+|type array     |`type array`       |`"type": [`<br />&nbsp;&nbsp;&nbsp;`value`<br>`]`|
 |description	|`description`      |`"description": value`                   		|
 |array		 	|`array`         	|`"id": value`                    				|
 |x-createDt		|`'createDt`        |`"x-createDt": value`                    		|
