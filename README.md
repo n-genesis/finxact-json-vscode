@@ -10,7 +10,7 @@ Formats JSON files using Finxact JSON schema rules.
 
 ## Installation
 
-> **Zip Download:** If you don't want to use git you can download this extension as a zip file from [Google Drive](https://drive.google.com/drive/folders/1uR_OLwiFLV3LTDQOQz-qIwsMHLhNEpWy?usp=sharing)
+> **Zip Download:** If you don't want to use git you can download this extension as a zip file from [Google Drive](https://drive.google.com/file/d/1dBfSdz5x9JUc9DQJybYBlUH4p0x8lkiA/view?usp=sharing)
 
 For different platform you should find the `.vscode/extensions` directory it in the following locations:
 ```
