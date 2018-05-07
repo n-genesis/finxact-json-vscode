@@ -102,6 +102,11 @@ Key values pairs found in Block Level 2+. Many general tags are child key:values
 |originSource	|`originSource`		|`"originSource": {key: value}`									|
 
 ## Fixed issue #
+### 2.5.2
+- Indentation now starts at column 18
+- Children are indented 4 space now longer with a tab
+- Closing brackets are aligned to the longest keynames closing bracket
+
 ### 2.5.1
 - Short keyname alignment now is push passed open bracket
 
