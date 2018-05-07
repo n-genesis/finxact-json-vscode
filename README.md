@@ -103,7 +103,7 @@ Key values pairs found in Block Level 2+. Many general tags are child key:values
 
 ## Fixed issue #
 ### 2.5.2
-- Indentation now starts at column 18
+- Indentation now starts at column 19 -20 (better closing bracket alignment)
 - Children are indented 4 space now longer with a tab
 - Closing brackets are aligned to the longest keynames closing bracket
 
