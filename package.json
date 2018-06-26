@@ -2,7 +2,7 @@
     "name": "finxact-json-schema",
     "displayName": "Finxact json formatter",
     "description": "Format json files using Finxact schema",
-    "version": "2.5.2",
+    "version": "2.6",
     "publisher": "andrewgarber",
     "icon": "images/icon.png",
     "engines": {

@@ -30,23 +30,6 @@ To format a JSON file simply Right click and select "Finxact JSON Format" option
 
 > **Recommended:** To make it a little easier when editing it really helps to first default format the file so when adding new values the cursor is a little more predictable in its positioning for new lines.
 
-## Known Issues
-
-For the Error Notice shown when there's a syntax error the line number of syntax error is not determined solely by JSON file's line numbers.
-
-Empty objects will remove following brackets and child properties and only return the keyname. Ex:
-```
-"properties": { 
-	"channel": {
-	...... 
-	}
-}
-```
-Will become:
-```
-"properties": 
-	"channel":
-```
 
 ## Release Notes
 
@@ -102,10 +85,13 @@ Key values pairs found in Block Level 2+. Many general tags are child key:values
 |originSource	|`originSource`		|`"originSource": {key: value}`									|
 
 ## Fixed issue #
+### 2.6
+- Closing bracket alignment
+
 ### 2.5.2
 - Indentation now starts at column 19 -20 (better closing bracket alignment)
-- Children are indented 4 space now longer with a tab
-- Closing brackets are aligned to the longest keynames closing bracket
+- Children blocks are indented with 4 spaces and no longer with a tab
+- Closing brackets are aligned to the longest key name closing bracket inside its parent
 
 ### 2.5.1
 - Short keyname alignment now is push passed open bracket
