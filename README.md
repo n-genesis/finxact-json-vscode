@@ -52,7 +52,7 @@ The following are a list of available `key:value` snippets for the Finxact Forma
 - Closing bracket alignment equally reduced by tab
 - Array closing bracket alignment
 - Include Finxact json schema key name snippets
-  - Fix value type associated with key name 
+    - Fix value type associated with key name 
 
 
 ### 2.5.2
