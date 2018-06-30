@@ -1,189 +1,1384 @@
-{	
-	/*"Fin-JSON.schema": {
-		"prefix": "$schema",
+{
+	"Fin-JSON.maximum": {
+		"prefix": "maximum",
 		"body": [
-			"\"$schema\": ${1:<value>},$0"
+			"\"maximum\": ${1:number},$0"
 		],
-		"description": "$schema keyname"
-	},
-	*/
-	"Fin-JSON.id": {
-		"prefix": "id",
-		"body": [
-			"\"id\": \"${1:<value>}\",$0"
-		],
-		"description": "ID keyname"
-	},
-	"Fin-JSON.x-createDt": {
-		"prefix": "x-createDt",
-		"prefix": "createDt",
-		"body": [
-			"\"x-createDt\": ${1},$0"
-		]
-	},
-	"Fin-JSON.x-createBy": {
-		"prefix": "x-createBy",
-		"prefix": "createBy",
-		"body": [
-			"\"x-createBy\": ${1:<value>},$0"
-		]
-	},
-	"Fin-JSON.x-updateDt": {
-		"prefix": "x-updateDt",
-		"prefix": "updateDt",
-		"body": [
-			"\"x-updateDt\": ${1:<value>},$0"
-		]
-	},
-	"Fin-JSON.x-updateBy": {
-		"prefix": "x-updateBy",
-		"prefix": "updateBy",
-		"body": [
-			"\"x-updateBy\": ${1:<value>},$0"
-		]
-	},
-	//Shared properties
-	"Fin-JSON.title": {
-		"prefix": "title",
-		"body": [
-			"\"title\": ${1:<value>},$0"
-		],
-		"description": "Title keyname"
+		"description": ""
 	},
 	"Fin-JSON.type": {
 		"prefix": "type",
 		"body": [
-			"\"type\" : ${1:<value>},$0"
-		]
-	},
-	"Fin-JSON.typeArray": {
-		"prefix": "type array",
-		"body": [
-			"\"type\": [",
-				"      $0",
-				"],"
+			"\"type\": \"${1:string}\",$0"
 		],
-		"description": "Create JSON Tag array"
-	},
-	"Fin-JSON.description": {
-		"prefix": "description",
-		"body": [
-			"\"description\": ${1:<value>},$0"
-		]
-	},
-	"Fin-JSON.maxLength": {
-		"prefix": "maxLength",
-		"body": [
-			"\"maxLength\": ${1|one,two,three|},$0"
-		]
+		"description": ""
 	},
 	"Fin-JSON.choices": {
 		"prefix": "choices",
 		"body": [
 			"\"choices\": [",
-			"    [",
-			"        ${1:<key>},",
-			"        \"${2:<value>}\"",
-			"    ],",
-			"    $0",
-			"]"
+			"          [${1:number}, \"${2:string}\"],$0",
+			"   ],"
 		],
-		"description": "Create JSON choices array"
+		"description": ""
 	},
-	"Fin-JSON.createArray": {
-		"prefix": "array",
+	"Fin-JSON.items": {
+		"prefix": "items",
 		"body": [
-			"[",
-			"    ${1:<key>},",
-			"    \"${2:<value>}\"",
-			"],",
-			"$0"
+			"\"items\": ${1:<value>},$0"
 		],
-		"description": "Create JSON array"
+		"description": ""
 	},
-	//Propery object
 	"Fin-JSON.properties": {
 		"prefix": "properties",
 		"body": [
-			"\"properties\": {",
-			"      $0",
-			"},"
+			"\"properties\": ${1:<value>},$0"
 		],
-		"description": "Create JSON Property object"
+		"description": ""
 	},
-	//Property object properties
-	//Shared key/value properties
+	"Fin-JSON.size": {
+		"prefix": "size",
+		"body": [
+			"\"size\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.default": {
+		"prefix": "default",
+		"body": [
+			"\"default\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.serialize": {
+		"prefix": "serialize",
+		"body": [
+			"\"serialize\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.format": {
+		"prefix": "format",
+		"body": [
+			"\"format\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.$ref": {
+		"prefix": "$ref",
+		"body": [
+			"\"$ref\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.tcDtl": {
+		"prefix": "tcDtl",
+		"body": [
+			"\"tcDtl\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.maxLength": {
+		"prefix": "maxLength",
+		"body": [
+			"\"maxLength\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.required": {
+		"prefix": "required",
+		"body": [
+			"\"required\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.signedBy": {
+		"prefix": "signedBy",
+		"body": [
+			"\"signedBy\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.referenceKey": {
+		"prefix": "referenceKey",
+		"body": [
+			"\"referenceKey\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.closeDtm": {
+		"prefix": "closeDtm",
+		"body": [
+			"\"closeDtm\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.foreignKeys": {
+		"prefix": "foreignKeys",
+		"body": [
+			"\"foreignKeys\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.violationFee": {
+		"prefix": "violationFee",
+		"body": [
+			"\"violationFee\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.geoLoc": {
+		"prefix": "geoLoc",
+		"body": [
+			"\"geoLoc\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.geoplace": {
+		"prefix": "geoplace",
+		"body": [
+			"\"geoplace\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.penRate": {
+		"prefix": "penRate",
+		"body": [
+			"\"penRate\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.allof": {
+		"prefix": "allof",
+		"body": [
+			"\"allof\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.rateDtl": {
+		"prefix": "rateDtl",
+		"body": [
+			"\"rateDtl\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.isBlended": {
+		"prefix": "isBlended",
+		"body": [
+			"\"isBlended\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.decimal": {
+		"prefix": "decimal",
+		"body": [
+			"\"decimal\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.multipleOf": {
+		"prefix": "multipleOf",
+		"body": [
+			"\"multipleOf\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.parameters": {
+		"prefix": "parameters",
+		"body": [
+			"\"parameters\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.val": {
+		"prefix": "val",
+		"body": [
+			"\"val\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.indexKey": {
+		"prefix": "indexKey",
+		"body": [
+			"\"indexKey\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.penaltyRt": {
+		"prefix": "penaltyRt",
+		"body": [
+			"\"penaltyRt\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.desc": {
+		"prefix": "desc",
+		"body": [
+			"\"desc\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.primaryKey": {
+		"prefix": "primaryKey",
+		"body": [
+			"\"primaryKey\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.entries": {
+		"prefix": "entries",
+		"body": [
+			"\"entries\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.minItems": {
+		"prefix": "minItems",
+		"body": [
+			"\"minItems\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.dtl": {
+		"prefix": "dtl",
+		"body": [
+			"\"dtl\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
 	"Fin-JSON.minimum": {
 		"prefix": "minimum",
 		"body": [
 			"\"minimum\": ${1:<value>},$0"
 		],
-		"description": "Create JSON minimum key/value"
+		"description": ""
 	},
-	"Fin-JSON.maximum": {
-		"prefix": "maximum",
+	"Fin-JSON.isNonTax": {
+		"prefix": "isNonTax",
 		"body": [
-			"\"maximum\": ${1:<value>},$0"
+			"\"isNonTax\": ${1:<value>},$0"
 		],
-		"description": "Create JSON maximum key/value"
+		"description": ""
 	},
-	"Fin-JSON.Id": {
+	"Fin-JSON.minimum:": {
+		"prefix": "minimum:",
+		"body": [
+			"\"minimum:\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.holidays": {
+		"prefix": "holidays",
+		"body": [
+			"\"holidays\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.refCalendarName": {
+		"prefix": "refCalendarName",
+		"body": [
+			"\"refCalendarName\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.holiday": {
+		"prefix": "holiday",
+		"body": [
+			"\"holiday\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.closeTm": {
+		"prefix": "closeTm",
+		"body": [
+			"\"closeTm\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.dayOfWk": {
+		"prefix": "dayOfWk",
+		"body": [
+			"\"dayOfWk\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.date": {
+		"prefix": "date",
+		"body": [
+			"\"date\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.cntryName": {
+		"prefix": "cntryName",
+		"body": [
+			"\"cntryName\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.trnFees": {
+		"prefix": "trnFees",
+		"body": [
+			"\"trnFees\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.trnCodeFee": {
+		"prefix": "trnCodeFee",
+		"body": [
+			"\"trnCodeFee\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.perTrnLimits": {
+		"prefix": "perTrnLimits",
+		"body": [
+			"\"perTrnLimits\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.crTermExt": {
+		"prefix": "crTermExt",
+		"body": [
+			"\"crTermExt\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.promoDtl": {
+		"prefix": "promoDtl",
+		"body": [
+			"\"promoDtl\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.maxChngLife": {
+		"prefix": "maxChngLife",
+		"body": [
+			"\"maxChngLife\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.promoTerm": {
+		"prefix": "promoTerm",
+		"body": [
+			"\"promoTerm\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.version": {
+		"prefix": "version",
+		"body": [
+			"\"version\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.posnRef": {
+		"prefix": "posnRef",
+		"body": [
+			"\"posnRef\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.function": {
+		"prefix": "function",
+		"body": [
+			"\"function\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.allOf": {
+		"prefix": "allOf",
+		"body": [
+			"\"allOf\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.reference": {
+		"prefix": "reference",
+		"body": [
+			"\"reference\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.definitions": {
+		"prefix": "definitions",
+		"body": [
+			"\"definitions\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.views": {
+		"prefix": "views",
+		"body": [
+			"\"views\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.propList": {
+		"prefix": "propList",
+		"body": [
+			"\"propList\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.ex": {
+		"prefix": "ex",
+		"body": [
+			"\"ex\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.baseProperties": {
+		"prefix": "baseProperties",
+		"body": [
+			"\"baseProperties\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.referenceProp": {
+		"prefix": "referenceProp",
+		"body": [
+			"\"referenceProp\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.filter": {
+		"prefix": "filter",
+		"body": [
+			"\"filter\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.select": {
+		"prefix": "select",
+		"body": [
+			"\"select\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.description": {
+		"prefix": "description",
+		"body": [
+			"\"description\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.propNames": {
+		"prefix": "propNames",
+		"body": [
+			"\"propNames\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.locale": {
+		"prefix": "locale",
+		"body": [
+			"\"locale\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.choice": {
+		"prefix": "choice",
+		"body": [
+			"\"choice\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.region": {
+		"prefix": "region",
+		"body": [
+			"\"region\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.oneOf": {
+		"prefix": "oneOf",
+		"body": [
+			"\"oneOf\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.isMultiRole": {
+		"prefix": "isMultiRole",
+		"body": [
+			"\"isMultiRole\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.indexes": {
+		"prefix": "indexes",
+		"body": [
+			"\"indexes\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.isUnique": {
+		"prefix": "isUnique",
+		"body": [
+			"\"isUnique\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.errInfo": {
+		"prefix": "errInfo",
+		"body": [
+			"\"errInfo\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.isAccumGL": {
+		"prefix": "isAccumGL",
+		"body": [
+			"\"isAccumGL\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.errors": {
+		"prefix": "errors",
+		"body": [
+			"\"errors\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.posnBal": {
+		"prefix": "posnBal",
+		"body": [
+			"\"posnBal\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.x-dbInterface": {
+		"prefix": "x-dbInterface",
+		"body": [
+			"\"x-dbInterface\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.fee": {
+		"prefix": "fee",
+		"body": [
+			"\"fee\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.keyValues": {
+		"prefix": "keyValues",
+		"body": [
+			"\"keyValues\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.maxlength": {
+		"prefix": "maxlength",
+		"body": [
+			"\"maxlength\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.cancelDtm": {
+		"prefix": "cancelDtm",
+		"body": [
+			"\"cancelDtm\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.trnCodeExcl": {
+		"prefix": "trnCodeExcl",
+		"body": [
+			"\"trnCodeExcl\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.odsweepFeeLimits": {
+		"prefix": "odsweepFeeLimits",
+		"body": [
+			"\"odsweepFeeLimits\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.nsfFeeMax": {
+		"prefix": "nsfFeeMax",
+		"body": [
+			"\"nsfFeeMax\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.varPct": {
+		"prefix": "varPct",
+		"body": [
+			"\"varPct\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.feeLimits": {
+		"prefix": "feeLimits",
+		"body": [
+			"\"feeLimits\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.feeMaxCnt": {
+		"prefix": "feeMaxCnt",
+		"body": [
+			"\"feeMaxCnt\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.finInstBic": {
+		"prefix": "finInstBic",
+		"body": [
+			"\"finInstBic\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.mimimum": {
+		"prefix": "mimimum",
+		"body": [
+			"\"mimimum\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.glAccrToDtm": {
+		"prefix": "glAccrToDtm",
+		"body": [
+			"\"glAccrToDtm\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.attachments": {
+		"prefix": "attachments",
+		"body": [
+			"\"attachments\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.uri": {
+		"prefix": "uri",
+		"body": [
+			"\"uri\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON._Id": {
 		"prefix": "_Id",
 		"body": [
-			"\"_Id\": {",
-			"    \"${1:<key>}\": ${2:<value>},",
-			"    $0",
-			"},"
+			"\"_Id\": ${1:<value>},$0"
 		],
-		"description": "Create JSON _Id object"
+		"description": ""
+	},
+	"Fin-JSON.vertical": {
+		"prefix": "vertical",
+		"body": [
+			"\"vertical\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.identity": {
+		"prefix": "identity",
+		"body": [
+			"\"identity\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.app": {
+		"prefix": "app",
+		"body": [
+			"\"app\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.wthStateAcct": {
+		"prefix": "wthStateAcct",
+		"body": [
+			"\"wthStateAcct\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.ref": {
+		"prefix": "ref",
+		"body": [
+			"\"ref\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.isSession": {
+		"prefix": "isSession",
+		"body": [
+			"\"isSession\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.interval": {
+		"prefix": "interval",
+		"body": [
+			"\"interval\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.url": {
+		"prefix": "url",
+		"body": [
+			"\"url\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.userRoles": {
+		"prefix": "userRoles",
+		"body": [
+			"\"userRoles\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.logId": {
+		"prefix": "logId",
+		"body": [
+			"\"logId\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.kbaStatics": {
+		"prefix": "kbaStatics",
+		"body": [
+			"\"kbaStatics\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.createDtm": {
+		"prefix": "createDtm",
+		"body": [
+			"\"createDtm\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.oldVal": {
+		"prefix": "oldVal",
+		"body": [
+			"\"oldVal\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.sub": {
+		"prefix": "sub",
+		"body": [
+			"\"sub\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.maxItems": {
+		"prefix": "maxItems",
+		"body": [
+			"\"maxItems\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.cat": {
+		"prefix": "cat",
+		"body": [
+			"\"cat\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.valFmt": {
+		"prefix": "valFmt",
+		"body": [
+			"\"valFmt\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.whenBtwn": {
+		"prefix": "whenBtwn",
+		"body": [
+			"\"whenBtwn\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.enum": {
+		"prefix": "enum",
+		"body": [
+			"\"enum\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.orderId": {
+		"prefix": "orderId",
+		"body": [
+			"\"orderId\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.interface": {
+		"prefix": "interface",
+		"body": [
+			"\"interface\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.partyId": {
+		"prefix": "partyId",
+		"body": [
+			"\"partyId\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.trnId": {
+		"prefix": "trnId",
+		"body": [
+			"\"trnId\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.remain": {
+		"prefix": "remain",
+		"body": [
+			"\"remain\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.attach": {
+		"prefix": "attach",
+		"body": [
+			"\"attach\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.phones": {
+		"prefix": "phones",
+		"body": [
+			"\"phones\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.partyPhone": {
+		"prefix": "partyPhone",
+		"body": [
+			"\"partyPhone\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.addrId": {
+		"prefix": "addrId",
+		"body": [
+			"\"addrId\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.verifyDtm": {
+		"prefix": "verifyDtm",
+		"body": [
+			"\"verifyDtm\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.stmts": {
+		"prefix": "stmts",
+		"body": [
+			"\"stmts\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.subGroups": {
+		"prefix": "subGroups",
+		"body": [
+			"\"subGroups\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.maxValue": {
+		"prefix": "maxValue",
+		"body": [
+			"\"maxValue\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.roleCode": {
+		"prefix": "roleCode",
+		"body": [
+			"\"roleCode\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.endDtm": {
+		"prefix": "endDtm",
+		"body": [
+			"\"endDtm\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.accounts": {
+		"prefix": "accounts",
+		"body": [
+			"\"accounts\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.accts": {
+		"prefix": "accts",
+		"body": [
+			"\"accts\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.ownerCode": {
+		"prefix": "ownerCode",
+		"body": [
+			"\"ownerCode\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.isPubliclyHeld": {
+		"prefix": "isPubliclyHeld",
+		"body": [
+			"\"isPubliclyHeld\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.webAddr": {
+		"prefix": "webAddr",
+		"body": [
+			"\"webAddr\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.x-isEncrypted": {
+		"prefix": "x-isEncrypted",
+		"body": [
+			"\"x-isEncrypted\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.seqNbr": {
+		"prefix": "seqNbr",
+		"body": [
+			"\"seqNbr\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.contextValues": {
+		"prefix": "contextValues",
+		"body": [
+			"\"contextValues\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.eventCtxtId": {
+		"prefix": "eventCtxtId",
+		"body": [
+			"\"eventCtxtId\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.accumToDtm": {
+		"prefix": "accumToDtm",
+		"body": [
+			"\"accumToDtm\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.temporal": {
+		"prefix": "temporal",
+		"body": [
+			"\"temporal\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.glBal": {
+		"prefix": "glBal",
+		"body": [
+			"\"glBal\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.components": {
+		"prefix": "components",
+		"body": [
+			"\"components\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.isStop": {
+		"prefix": "isStop",
+		"body": [
+			"\"isStop\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.computeds": {
+		"prefix": "computeds",
+		"body": [
+			"\"computeds\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.feesPd": {
+		"prefix": "feesPd",
+		"body": [
+			"\"feesPd\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.waivedCnt": {
+		"prefix": "waivedCnt",
+		"body": [
+			"\"waivedCnt\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.isIncludeTran": {
+		"prefix": "isIncludeTran",
+		"body": [
+			"\"isIncludeTran\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.sumWthState": {
+		"prefix": "sumWthState",
+		"body": [
+			"\"sumWthState\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.trnCode": {
+		"prefix": "trnCode",
+		"body": [
+			"\"trnCode\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.returnFee": {
+		"prefix": "returnFee",
+		"body": [
+			"\"returnFee\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.maturityDtm": {
+		"prefix": "maturityDtm",
+		"body": [
+			"\"maturityDtm\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.drBalGrace": {
+		"prefix": "drBalGrace",
+		"body": [
+			"\"drBalGrace\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.glCat": {
+		"prefix": "glCat",
+		"body": [
+			"\"glCat\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.messages": {
+		"prefix": "messages",
+		"body": [
+			"\"messages\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.triggers": {
+		"prefix": "triggers",
+		"body": [
+			"\"triggers\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.requestBody": {
+		"prefix": "requestBody",
+		"body": [
+			"\"requestBody\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.additionalProperties": {
+		"prefix": "additionalProperties",
+		"body": [
+			"\"additionalProperties\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.value": {
+		"prefix": "value",
+		"body": [
+			"\"value\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.ifxAcctType": {
+		"prefix": "ifxAcctType",
+		"body": [
+			"\"ifxAcctType\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.responseBody": {
+		"prefix": "responseBody",
+		"body": [
+			"\"responseBody\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.resource": {
+		"prefix": "resource",
+		"body": [
+			"\"resource\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.idPwd": {
+		"prefix": "idPwd",
+		"body": [
+			"\"idPwd\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.scope": {
+		"prefix": "scope",
+		"body": [
+			"\"scope\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.trn": {
+		"prefix": "trn",
+		"body": [
+			"\"trn\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.doc": {
+		"prefix": "doc",
+		"body": [
+			"\"doc\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.idUrl": {
+		"prefix": "idUrl",
+		"body": [
+			"\"idUrl\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.retryDtm": {
+		"prefix": "retryDtm",
+		"body": [
+			"\"retryDtm\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.operationsRef": {
+		"prefix": "operationsRef",
+		"body": [
+			"\"operationsRef\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.role": {
+		"prefix": "role",
+		"body": [
+			"\"role\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.operation": {
+		"prefix": "operation",
+		"body": [
+			"\"operation\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.args": {
+		"prefix": "args",
+		"body": [
+			"\"args\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.subAcctId": {
+		"prefix": "subAcctId",
+		"body": [
+			"\"subAcctId\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.isPermit": {
+		"prefix": "isPermit",
+		"body": [
+			"\"isPermit\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.tzGmtOffset": {
+		"prefix": "tzGmtOffset",
+		"body": [
+			"\"tzGmtOffset\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.trnInputs": {
+		"prefix": "trnInputs",
+		"body": [
+			"\"trnInputs\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.hold": {
+		"prefix": "hold",
+		"body": [
+			"\"hold\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.entryInputs": {
+		"prefix": "entryInputs",
+		"body": [
+			"\"entryInputs\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.x-type": {
+		"prefix": "x-type",
+		"body": [
+			"\"x-type\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.x-format": {
+		"prefix": "x-format",
+		"body": [
+			"\"x-format\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.wthFed": {
+		"prefix": "wthFed",
+		"body": [
+			"\"wthFed\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.x-maximum": {
+		"prefix": "x-maximum",
+		"body": [
+			"\"x-maximum\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.exch": {
+		"prefix": "exch",
+		"body": [
+			"\"exch\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.imgUri": {
+		"prefix": "imgUri",
+		"body": [
+			"\"imgUri\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.isNobook": {
+		"prefix": "isNobook",
+		"body": [
+			"\"isNobook\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.exceptions": {
+		"prefix": "exceptions",
+		"body": [
+			"\"exceptions\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.userId": {
+		"prefix": "userId",
+		"body": [
+			"\"userId\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.treasRef": {
+		"prefix": "treasRef",
+		"body": [
+			"\"treasRef\": ${1:<value>},$0"
+		],
+		"description": ""
 	},
 	"Fin-JSON.logRef": {
 		"prefix": "logRef",
 		"body": [
-			"\"logRef\": {",
-			"    \"${1:<key>}\": ${2:<value>},",
-			"    $0",
-			"},"
+			"\"logRef\": ${1:<value>},$0"
 		],
-		"description": "Create JSON logRef object with first key/value"
+		"description": ""
 	},
-	"Fin-JSON.logRef-blank": {
-		"prefix": "logRef blank",
+	"Fin-JSON.eftFee": {
+		"prefix": "eftFee",
 		"body": [
-			"\"logRef\": {",
-			"    $0",
-			"},"
+			"\"eftFee\": ${1:<value>},$0"
 		],
-		"description": "Create JSON logRef object"
+		"description": ""
 	},
-	"Fin-JSON.orderType": {
-		"prefix": "orderType",
+	"Fin-JSON.addr": {
+		"prefix": "addr",
 		"body": [
-			"\"orderType\": {",
-			"    \"${1:<key>}\": ${2:<value>},",
-			"    $0",
-			"},"
+			"\"addr\": ${1:<value>},$0"
 		],
-		"description": "Create JSON orderType object"
+		"description": ""
 	},
-	"Fin-JSON.orderSource": {
-		"prefix": "orderSource",
+	"Fin-JSON.totAmtCr": {
+		"prefix": "totAmtCr",
 		"body": [
-			"\"orderSource\": {",
-			"    \"${1:<key>}\": ${2:<value>},",
-			"    $0",
-			"},"
+			"\"totAmtCr\": ${1:<value>},$0"
 		],
-		"description": "Create JSON orderSource object"
+		"description": ""
 	},
-	"Fin-JSON.originSource": {
-		"prefix": "originSource",
+	"Fin-JSON.note": {
+		"prefix": "note",
 		"body": [
-			"\"originSource\": {",
-			"    \"${1:<key>}\": ${2:<value>},",
-			"    $0",
-			"},"
+			"\"note\": ${1:<value>},$0"
 		],
-		"description": "Create JSON originSource object"
-	}
+		"description": ""
+	},
+	"Fin-JSON.accumCr": {
+		"prefix": "accumCr",
+		"body": [
+			"\"accumCr\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.maximim": {
+		"prefix": "maximim",
+		"body": [
+			"\"maximim\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.dfltRoles": {
+		"prefix": "dfltRoles",
+		"body": [
+			"\"dfltRoles\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.exclude": {
+		"prefix": "exclude",
+		"body": [
+			"\"exclude\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	"Fin-JSON.sourceMap": {
+		"prefix": "sourceMap",
+		"body": [
+			"\"sourceMap\": ${1:<value>},$0"
+		],
+		"description": ""
+	},
+	
 }
