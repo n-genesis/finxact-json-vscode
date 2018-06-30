@@ -31,9 +31,7 @@ To format a JSON file simply Right click and select "Finxact JSON Format" option
 > **Recommended:** To make it a little easier when editing it really helps to first default format the file so when adding new values the cursor is a little more predictable in its positioning for new lines.
 
 
-## Release Notes
-
-Special formatting for the following arrays:
+## Special formatting for the following arrays:
 
 - allOf
 - choices
@@ -49,45 +47,13 @@ Special formatting for the following arrays:
 
 The following are a list of available `key:value` snippets for the Finxact Formatter extension.
 
-### General Tags
 
-Key value pairs found in Block Level 1.
-
-|Keyname         |Prefix            |Snippet                 						|
-|---------------|-------------------|-----------------------------------------------|
-|id				|`id`         		|`"id": value`  								|
-|title			|`title`         	|`"title": value`            					|
-|type          	|`type`         	|`"type": value`                    			|
-|type array     |`type array`       |`"type": [value]`								|
-|description	|`description`      |`"description": value`                   		|
-|array		 	|`array`         	|`"id": value`                    				|
-|x-createDt		|`'createDt`        |`"x-createDt": value`                    		|
-|x-createBy		|`createBy`         |`"x-createBy": value`                   		|
-|x-updateDt		|`updateDt`         |`"x-updateDt": value`                    		|
-|x-updateBy		|`updateBy`         |`"x-updateBy": value`                     		|
-
-### Block Tags
-
-Key values pairs found in Block Level 2+. Many general tags are child key:values for the tags.
-
-|Keyname         |Prefix            |Snippet                 										|
-|---------------|-------------------|---------------------------------------------------------------|
-|properties		|`properties`		|`"properties": value`  										|
-|choices	 	|`choices`         	|`"choices": value`            									|
-|minimum     	|`minimum`         	|`"minimum": value`                    							|
-|maximum     	|`maximum`       	|`"maximum": value`												|
-|maxLength		|`maxLength`      	|`"maxLength": value`                   						|
-|_Id		 	|`_Id`         		|`"_Id": {key: value}`											|
-|logRef			|`logRef`			|`"logRef": {key: value}`										|
-|logRef blank	|`logRef blank`		|`"logRef": {value}`											|
-|orderType		|`orderType`		|`"orderType": {key: value}`									|
-|orderSource	|`orderSource`		|`"orderSource": {key: value}`									|
-|originSource	|`originSource`		|`"originSource": {key: value}`									|
-
-## Fixed issue #
 ### 2.6
 - Closing bracket alignment equally reduced by tab
 - Array closing bracket alignment
+- Include Finxact json schema key name snippets
+  - Fix value type associated with key name 
+
 
 ### 2.5.2
 - Indentation now starts at column 19 -20 (better closing bracket alignment)
