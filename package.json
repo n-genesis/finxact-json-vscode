@@ -9,7 +9,8 @@
         "vscode": "^1.0.0"
     },
     "categories": [
-        "Other"
+        "Other",
+        "Formatters",
     ],
     "activationEvents": [
         "onLanguage:json",
@@ -40,7 +41,7 @@
         "snippets": [
             {
                 "language": "json",
-                "path": "./snippets/json.json"
+                "path": "./snippets/snippets.json"
             }
         ]
     },
