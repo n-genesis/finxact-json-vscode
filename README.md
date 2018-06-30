@@ -48,34 +48,7 @@ To format a JSON file simply Right click and select "Finxact JSON Format" option
 The following are a list of available `key:value` snippets for the Finxact Formatter extension.
 
 
-### 2.6
-- Closing bracket alignment equally reduced by tab
-- Array closing bracket alignment
-- Include Finxact json schema key name snippets
-
-
-### 2.5.2
+### 1.0
 - Indentation now starts at column 19 -20 (better closing bracket alignment)
-- Children blocks are indented with 4 spaces and no longer with a tab
-- Closing brackets are aligned to the longest key name closing bracket inside its parent
-
-### 2.5.1
-- Short keyname alignment now is push passed open bracket
-
-### 2.5.0
-- Better closing bracket alignment
-- Resrtucture of extension classes *
-- Special keyname formatting for array and objects
-
-### 2.0.0
-- JSON no longer breaks with special array syntax.
-- Now shows error notice for invalid syntax.
-- No longer need to first use Default Formatter.
-
-### 1.0.0
-- No longer have to first select editors JSON text.
-- No longer adding new line breaks as end of file.
-- Basic key name value snippets.
-
-### 0.1.0
-- Nothing but spaghetti.
+- Closing bracket alignment equally reduced by tab
+- Include Finxact json schema key name snippets
