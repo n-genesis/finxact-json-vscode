@@ -86,7 +86,8 @@ Key values pairs found in Block Level 2+. Many general tags are child key:values
 
 ## Fixed issue #
 ### 2.6
-- Closing bracket alignment equally reduced by tab 
+- Closing bracket alignment equally reduced by tab
+- Array closing bracket alignment
 
 ### 2.5.2
 - Indentation now starts at column 19 -20 (better closing bracket alignment)
