@@ -21,8 +21,8 @@ Linux ~/.vscode/extensions
 
 ### Using Git (terminal)
 1. Navigate to your `.vscode/extension/` directory and clone this repo.
-3. After cloning you can choose to rename the `vs-code` folder but this is optional.
-4. The make sure to relaod VS Code for the extension to be added.
+2. After cloning you can choose to rename the `vs-code` folder but this is optional.
+3. The make sure to relaod VS Code for the extension to be added.
 
 ## Using Formatter
 To format a JSON file simply Right click and select "Finxact JSON Format" option or press (Ctrl+Alt+P).
