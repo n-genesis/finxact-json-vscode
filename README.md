@@ -20,10 +20,9 @@ Linux ~/.vscode/extensions
 ```
 
 ### Using Git (terminal)
-1. Navigate to your `.vscode/extension/` directory and create a new new folder name `finxact-json-formatter`.
-2. Under the newly created `finxact-formatter/` clone this repo.
-3. After cloning you can choose to rename the `vs-code` folder to `finxact-formatter/` but this is optional.
-4. Make sure to restart VS Code for the extension to be added.
+1. Navigate to your `.vscode/extension/` directory and clone this repo.
+3. After cloning you can choose to rename the `vs-code` folder but this is optional.
+4. The make sure to relaod VS Code for the extension to be added.
 
 ## Using Formatter
 To format a JSON file simply Right click and select "Finxact JSON Format" option or press (Ctrl+Alt+P).
