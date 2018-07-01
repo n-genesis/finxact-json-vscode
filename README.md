@@ -48,6 +48,6 @@ The following are a list of available `key:value` snippets for the Finxact Forma
 
 
 ### 1.0
-- Indentation now starts at column 19 -20 (better closing bracket alignment)
+- Indentation now starts at column 20 (better closing bracket alignment)
 - Closing bracket alignment equally reduced by tab
 - Include Finxact json schema key name snippets
