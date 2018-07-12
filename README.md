@@ -20,9 +20,26 @@ Linux ~/.vscode/extensions
 ```
 
 ### Using Git (terminal)
-1. Navigate to your `.vscode/extension/` directory and clone this repo.
-2. After cloning you can choose to rename the `vs-code` folder but this is optional.
-3. The make sure to relaod VS Code for the extension to be added.
+1. Navigate to `.vscode/extension/` and while in the directory clone the repo.
+```
+git clone https://finxact_ag@bitbucket.org/finxact/vs-code.git
+```
+2. After cloning a `vs-code` folder is created. Rename the folder to `fin-format`.
+```
+sudo mv vs-code fin-format
+```
+3. Relaod VS Code for the extension to be added.
+
+
+### Download
+1. After downloading the zip file cut and past it to `.vscode/extension/`.
+2. Unzip the file and rename it to `fin-format`.
+3. Relaod VS Code for the extension to be added.
+
+### Google Drive
+1. After downloading the zip file cut and past it to `.vscode/extension/`.
+2. Unzip the file while still in `extension/` folder.
+3. Relaod VS Code for the extension to be added.
 
 ## Using Formatter
 To format a JSON file simply Right click and select "Finxact JSON Format" option or press (Ctrl+Alt+P).
