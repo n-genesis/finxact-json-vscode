@@ -6,7 +6,7 @@ This is the README for the extension "finxact-json-formatter".
 Formats JSON files using Finxact JSON schema rules.
 
 ## Screenshot
-![](https://drive.google.com/uc?export=view&id=19r86_PTE2WxSEK1qLeotJYutsj207tbd)
+![](https://drive.google.com/uc?export=view&id=1zG2ezmvYBd9r4ikbdaM12Vzv6V1IloG1)
 
 ## Installation
 
