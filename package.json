@@ -28,6 +28,11 @@
 				"command": "extension.finxactFormat",
 				"key": "ctrl+alt+p",
 				"mac": "cmd+alt+p"
+            },
+            {
+				"command": "extension.finxactQuickFormat",
+				"key": "shift+enter",
+				"mac": "shift+enter"
 			}
         ],
         "menus": {
@@ -40,7 +45,7 @@
         "snippets": [
             {
                 "language": "json",
-                "path": "./snippets/snippets.json"
+                "path": "./snippets/json.json"
             }
         ]
     },
