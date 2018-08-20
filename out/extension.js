@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const vscode = require("vscode");
 //Include Finxact formatter library
-var finJSONSchema = require('json-finxact');
+var finJSONSchema = require('finxact-json');
 //var showFormatNotice = true;
 //Global prop
 var currentWindow = vscode.window;
@@ -24,9 +24,8 @@ function activate(context) {
         finxactIt(currentTextEditor);
     });
     let finValidate = vscode.commands.registerCommand('extension.finValidate', () => {
-        jsonValidate(currentTextEditor.document.getText());
-        console.log("Active From Foo");
-        currentWindow.showInformationMessage("Avtive from Foo");
+        //jsonValidate(currentTextEditor.document.getText());console.log("Active From Foo")
+        //currentWindow.showInformationMessage("Avtive from Foo");
     });
     context.subscriptions.push(disposable, disposable2, finValidate);
 }
