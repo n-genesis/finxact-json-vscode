@@ -11,7 +11,7 @@ var currentTextEditor = currentWindow.activeTextEditor;
 //const newTemplate = require('./commands/newtemplate');
 //const newFileFromTemplate = require('./commands/newfilefromtemplate');
 //var Ajv = require('ajv');
-//var ajv = new Ajv({allErrors: true});
+//var ajv = new Ajv({allErrors: true}); 
 function activate(context) {
     // Check to see if is json file
     if (currentWindow && currentTextEditor.document.languageId === 'json') {
