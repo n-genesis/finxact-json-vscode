@@ -57,7 +57,7 @@
 		"description": "Finxact type:array[]"
 	},
 	"Fin-JSON.typeStrAryMax": {
-		"prefix": "finTypeStrAry",
+		"prefix": "typeStrAryMax",
 		"body": [
 			"      \"type\" : [",
 			"        \"${1|string,integer,number,array,object|}\",",
