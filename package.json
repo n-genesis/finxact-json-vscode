@@ -1,19 +1,21 @@
 {
     "name": "finxact-json-schema",
-    "displayName": "Finxact json formatter",
-    "description": "Format json files using Finxact schema",
-    "version": "1.0.0",
+    "displayName": "Finxact json schema formatter",
+    "description": "Format json files using Finxact JSON schema",
+    "version": "2.0.0",
     "publisher": "andrewgarber",
     "icon": "images/icon.png",
     "engines": {
         "vscode": "^1.0.0"
     },
     "categories": [
-        "Formatters"
+        "Formatters",
+        "Other"
     ],
     "activationEvents": [
         "onLanguage:json",
-        "onCommand:extension.finxactFormat"
+        "onCommand:extension.finxactFormat",
+        "onCommand:extension.finxactValidate"
     ],
     "main": "./out/extension",
     "contributes": {
@@ -21,34 +23,53 @@
             {
                 "command": "extension.finxactFormat",
                 "title": "Finxact JSON Format"
+            },
+            {
+                "command": "extension.finValidate",
+                "title": "Finxact shcema validation"
             }
         ],
         "keybindings": [
-			{
-				"command": "extension.finxactFormat",
-				"key": "ctrl+alt+p",
-				"mac": "cmd+alt+p"
+            {
+                "command": "extension.finxactFormat",
+                "key": "ctrl+alt+p",
+                "mac": "cmd+alt+p"
             },
             {
-				"command": "extension.finxactQuickFormat",
-				"key": "shift+enter",
-				"mac": "shift+enter"
-			}
+                "command": "extension.finxactQuickFormat",
+                "key": "shift+enter",
+                "mac": "shift+enter"
+            }
         ],
         "menus": {
-            "editor/context": [{
-                "when": "resourceLangId == json",
-                "command": "extension.finxactFormat",
-                "group": "navigation"
-            }]
+            "editor/context": [
+                {
+                    "when": "resourceLangId == json",
+                    "command": "extension.finxactFormat",
+                    "group": "navigation"
+                }
+            ]
         },
         "snippets": [
             {
                 "language": "json",
-                "path": "./snippets/json.json"
+                "path": "./snippets/fin-snippets.json"
             }
         ]
     },
+    "grammars": [
+        {
+            "language": "jsont",
+            "scopeName": "text.html.jsont",
+            "path": "./syntaxes/jsont.tmLanguage"
+        }
+    ],
+    "jsonValidation": [
+        {
+            "fileMatch": ".json",
+            "url": "http://json.schemastore.org/jshintrc"
+        }
+    ],
     "scripts": {
         "vscode:prepublish": "npm run compile",
         "compile": "tsc -p ./",
@@ -61,5 +82,8 @@
         "vscode": "^1.1.6",
         "@types/node": "^7.0.43",
         "@types/mocha": "^2.2.42"
+    },
+    "dependencies": {
+        "ajv": "^6.5.3"
     }
 }
