@@ -1,4 +1,5 @@
 # ignore an entire directory
 .vscode/
+node_modules/ajv
 images/splash.png
 images/fin-format.gif
