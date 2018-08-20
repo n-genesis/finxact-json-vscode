@@ -9,11 +9,13 @@
         "vscode": "^1.0.0"
     },
     "categories": [
-        "Formatters"
+        "Formatters",
+        "Other"
     ],
     "activationEvents": [
         "onLanguage:json",
-        "onCommand:extension.finxactFormat"
+        "onCommand:extension.finxactFormat",
+        "onCommand:extension.finxactValidate"
     ],
     "main": "./out/extension",
     "contributes": {
@@ -21,6 +23,10 @@
             {
                 "command": "extension.finxactFormat",
                 "title": "Finxact JSON Format"
+            },
+            {
+                "command": "extension.finValidate",
+                "title": "Finxact shcema validation"
             }
         ],
         "keybindings": [
@@ -78,7 +84,6 @@
         "@types/mocha": "^2.2.42"
     },
     "dependencies": {
-        "ajv": "^6.5.3",
-        "finxact-json": "git+https://github.com/n-genesis/finxact-json.git"
+        "ajv": "^6.5.3"
     }
 }
