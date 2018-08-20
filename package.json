@@ -13,8 +13,7 @@
     ],
     "activationEvents": [
         "onLanguage:json",
-        "onCommand:extension.finxactFormat",
-        "onCommand:extension.finxactValidate"
+        "onCommand:extension.finxactFormat"
     ],
     "main": "./out/extension",
     "contributes": {
@@ -22,10 +21,6 @@
             {
                 "command": "extension.finxactFormat",
                 "title": "Finxact JSON Format"
-            },
-            {
-                "command": "extension.finValidate",
-                "title": "Finxact shcema validation"
             }
         ],
         "keybindings": [

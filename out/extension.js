@@ -20,7 +20,7 @@ function activate(context) {
     });
     let disposable2 = vscode.commands.registerCommand('extension.finxactQuickFormat', () => {
         //vscode.commands.executeCommand('editor.action.insertLineAfter')
-        currentWindow.showInformationMessage("Just for testing");
+        //currentWindow.showInformationMessage("Just for testing");
         finxactIt(currentTextEditor);
     });
     let finValidate = vscode.commands.registerCommand('extension.finValidate', () => {
