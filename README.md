@@ -12,10 +12,6 @@ This is the README for the extension "finxact-json-formatter".
 
 ## Installation
 
-# NOTE: Please download from Google Drive at this time
-
-
-
 > **Zip Download:** If you don't want to use git you can download files from [Google Drive](https://drive.google.com/drive/folders/13y3dKEXJE0sE4aGEdUZL8Iq0bGY5hopx?usp=sharing)
 
 For different platform you should find the `.vscode/extensions` directory it in the following locations:
