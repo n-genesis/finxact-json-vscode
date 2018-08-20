@@ -3,12 +3,15 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const vscode = require("vscode");
 //Include Finxact formatter library
 var finJSONSchema = require('finxact-json');
-//var showFormatNotice = true;
 //Global prop
 var currentWindow = vscode.window;
 var currentTextEditor = currentWindow.activeTextEditor;
-var Ajv = require('ajv');
-var ajv = new Ajv({ allErrors: true });
+//File templates commands
+//const editTemplate = require('./commands/edittemplate');
+//const newTemplate = require('./commands/newtemplate');
+//const newFileFromTemplate = require('./commands/newfilefromtemplate');
+//var Ajv = require('ajv');
+//var ajv = new Ajv({allErrors: true});
 function activate(context) {
     // Check to see if is json file
     if (currentWindow && currentTextEditor.document.languageId === 'json') {
@@ -59,13 +62,11 @@ function finxactIt(editor) {
     editor.selection = newSelection; //Reset the position after insert
 }
 function jsonValidate(data) {
-    var validate = ajv.compile(require('./schema/v1.0.json'));
+    //var validate = ajv.compile(require('./schema/v1.0.json'));
     //var data = {"foo": 1, "bar": 2}
-    var valid = validate(JSON.parse(data));
-    if (valid)
-        console.log('Valid!');
-    else
-        console.log('Invalid: ' + ajv.errorsText(validate.errors));
+    //var valid = validate(JSON.parse(data));
+    //if (valid) console.log('Valid!');
+    //else console.log('Invalid: ' + ajv.errorsText(validate.errors));
 }
 //Check for current window and if the file type is JSON
 function formatOption(currentWindow, currentTextEditor) {
