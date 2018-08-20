@@ -1,0 +1,144 @@
+{	
+	"Fin-JSON.object": {
+		"prefix": "finObj",
+		"body": [
+			"\"${1:propName}\": {",
+			"       \"title\": \"${2:value}\",",
+			" \"description\": \"${3:value}\"$4",
+			"}$0"
+		],
+		"description": "Finxact Object"
+	},
+
+	"Fin-JSON-prop": {
+		"prefix": "finPropObj",
+		"body": [
+			"\"${1:properties}\": {",
+			"       $0",
+			"}"
+		],
+		"description": "Finxact property object"
+	},
+
+	"Fin-JSON.type": {
+		"prefix": "finType",
+		"body": [
+			"\"type\" : \"${1|string,integer,number,array,object|}\",$0"
+		],
+		"description": "Finxact type key/value pair"
+	},
+
+	"Fin-JSON.typeStr": {
+		"prefix": "finTypeStr",
+		"body": [
+			"      \"type\" : \"string\",",
+			" \"maxLength\" : ${1:int}$0"	
+		],
+		"description": "Finxact type:string + maxLength"
+	},
+	"Fin-JSON.typeStrFmt": {
+		"prefix": "finTypeStrFmt",
+		"body": [
+			"      \"type\" : \"string\",",
+			" \"maxLength\" : ${1:int},",
+			"    \"format\" : \"${2|date,time,date-time,text,text-area,tguid,freq,dur|}\"$0"
+		],
+		"description": "Finxact type:string + format + maxLength"
+	},
+
+	"Fin-JSON.typeStrAry": {
+		"prefix": "finTypeStrAry",
+		"body": [
+			"      \"type\" : [",
+			"        \"${1|string,integer,number,array,object|}\",",
+			"        \"${2|string,integer,number,array,object|}\"$3",
+			"]$0"
+		],
+		"description": "Finxact type:array[]"
+	},
+	"Fin-JSON.typeStrAryMax": {
+		"prefix": "finTypeStrAry",
+		"body": [
+			"      \"type\" : [",
+			"        \"${1|string,integer,number,array,object|}\",",
+			"        \"${2|string,integer,number,array,object|}\"$3",
+			"],",
+			" \"maxLength\" : ${4:int}$0"
+		],
+		"description": "Finxact type:array[] + maxLength"
+	},
+
+	"Fin-JSON.typeIntRan": {
+		"prefix": "finTypeIntRan",
+		"body": [
+			"\"type\" : \"integer\",",
+			"\"minimun\" : ${1:int},",
+			"\"maximum\" : ${2:int}$0"
+		],
+		"description": "Finxact type:integer + min - max"
+	},
+	"Fin-JSON.typeIntMin": {
+		"prefix": "finTypeIntMin",
+		"body": [
+			"\"type\" : \"integer\",",
+			"\"minimun\" : ${1:int}$0"
+		],
+		"description": "Finxact type:integer + min"
+	},
+	"Fin-JSON.typeIntMax": {
+		"prefix": "finTypeIntMax",
+		"body": [
+			"\"type\" : \"integer\",",
+			"\"maximun\" : ${1:int}$0"
+		],
+		"description": "Finxact type:integer + max"
+	},
+
+
+	"Fin-JSON.typeNum": {
+		"prefix": "finTypeNum",
+		"body": [
+			"      \"type\" : \"number\",",
+			" \"maxLength\" : ${1:int}$0"	
+		],
+		"description": "Finxact type:number + maxLength"
+	},
+
+	"Fin-JSON.null": {
+		"prefix": "finNull",
+		"body": [
+			"\"choices\": [",
+			"         [",
+			"        [${1:int},${2:\"string\"}],",
+			"    ]",
+			"    $0",
+			"]"
+		],
+		"description": "Finxact choices array"
+	},
+
+	"Fin-JSON.choices": {
+		"prefix": "finChoices",
+		"body": [
+			"\"choices\": [",
+			"         [",
+			"        [${1:int},${2:\"string\"}],",
+			"    ]",
+			"    $0",
+			"]"
+		],
+		"description": "Finxact choices array"
+	},
+
+	"Fin-JSON.createArray": {
+		"prefix": "array",
+		"body": [
+			"[",
+			"    ${1:<key>},",
+			"    \"${2:<value>}\"",
+			"],",
+			"$0"
+		],
+		"description": "Create JSON array"
+	}
+}
