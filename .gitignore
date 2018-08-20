@@ -1,3 +1,4 @@
 # ignore an entire directory
 .vscode/
-.images/splash.png
+images/splash.png
+images/fin-format.gif
