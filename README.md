@@ -43,7 +43,9 @@ sudo mv vs-code fin-format
 2. Unzip the file while still in `extension/` folder.
 3. Relaod VS Code for the extension to be added.
 
-## KeyBindings
+## Using the Extension
+
+### Format KeyBindings
 To format a JSON file simply Right click and select "Finxact JSON Format" option or use:
 
 - Windows + Linux: `ctrl+alt+p`
@@ -52,6 +54,18 @@ To format a JSON file simply Right click and select "Finxact JSON Format" option
 
 > **Recommended:** To make it a little easier when editing it really helps to first default format the file so when adding new values the cursor is a little more predictable in its positioning for new lines.
 
+### Format Commands
+- To be included
+
+
+### JSON Validation
+- To be included
+
+### File Template
+
+Finxat commands can be used through the Command Palette (`F1`).
+
+![IntelliSense](https://github.com/microsoft/vscode-docker/raw/master/images/commands.gif)
 
 ## Special formatting for the following arrays:
 
