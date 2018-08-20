@@ -1,16 +1,15 @@
 {
     "name": "finxact-json-schema",
-    "displayName": "Finxact json schema formatter",
-    "description": "Format json files using Finxact JSON schema",
-    "version": "2.0.0",
+    "displayName": "Finxact json formatter",
+    "description": "Format json files using Finxact schema",
+    "version": "1.0.0",
     "publisher": "andrewgarber",
     "icon": "images/icon.png",
     "engines": {
         "vscode": "^1.0.0"
     },
     "categories": [
-        "Formatters",
-        "Other"
+        "Formatters"
     ],
     "activationEvents": [
         "onLanguage:json",
