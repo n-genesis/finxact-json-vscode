@@ -8,7 +8,7 @@ This is the README for the extension "finxact-json-formatter".
 - New File templates (in dev) 
 
 ## Screenshot
-![](https://drive.google.com/uc?export=view&id=1zG2ezmvYBd9r4ikbdaM12Vzv6V1IloG1)
+![](https://drive.google.com/uc?export=view&id=1N4oDMsDjzcSXV0vv6lk0AlxeFSkH7HA4)
 
 ## Installation
 
