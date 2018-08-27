@@ -66,12 +66,10 @@ To format a JSON file simply Right click and select "Finxact JSON Format" option
 Finxat commands can be used through the Command Palette (`F1`).
 - To be included
 
-<!--
-![IntelliSense](https://drive.google.com/uc?export=view&id=1zG2ezmvYBd9r4ikbdaM12Vzv6V1IloG1)
--->
 
 ## Snippets
-The follwoing are a list of snippets included with the extension for assistance with Finxact JSON file creation
+The follwoing are a list of snippets included with the extension for assistance with Finxact JSON file creation.
+- To be included
 
 ## Special formatting for the following arrays:
 
