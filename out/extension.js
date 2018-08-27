@@ -11,7 +11,7 @@ var currentTextEditor = currentWindow.activeTextEditor;
 //const newTemplate = require('./commands/newtemplate');
 //const newFileFromTemplate = require('./commands/newfilefromtemplate');
 //var Ajv = require('ajv');
-//var ajv = new Ajv({allErrors: true}); 
+//var ajv = new Ajv({allErrors: true});
 function activate(context) {
     // Check to see if is json file
     if (currentWindow && currentTextEditor.document.languageId === 'json') {
@@ -19,22 +19,24 @@ function activate(context) {
     }
     //Lets create a keybinding function
     let disposable = vscode.commands.registerCommand('extension.finxactFormat', () => {
-        finxactIt(currentTextEditor);
+        finFormat(currentTextEditor);
     });
     let disposable2 = vscode.commands.registerCommand('extension.finxactQuickFormat', () => {
         //vscode.commands.executeCommand('editor.action.insertLineAfter')
         //currentWindow.showInformationMessage("Just for testing");
-        finxactIt(currentTextEditor);
+        finFormat(currentTextEditor);
     });
     let finValidate = vscode.commands.registerCommand('extension.finValidate', () => {
-        //jsonValidate(currentTextEditor.document.getText());console.log("Active From Foo")
+        //jsonValidate(currentTextEditor.document.getText());
+        vscode.commands.executeCommand("workbench.debug.action.toggleRepl");
+        console.info("Active From Foo");
         //currentWindow.showInformationMessage("Avtive from Foo");
     });
     context.subscriptions.push(disposable, disposable2, finValidate);
 }
 exports.activate = activate;
 //Combine everything into one thing Works for now
-function finxactIt(editor) {
+let finFormat = function (editor) {
     var builder;
     const position = editor.selection.active;
     var newPosition = position.with(position.line, position.character);
@@ -60,7 +62,7 @@ function finxactIt(editor) {
         vscode.window.activeTextEditor.edit(builder);
     }
     editor.selection = newSelection; //Reset the position after insert
-}
+};
 function jsonValidate(data) {
     //var validate = ajv.compile(require('./schema/v1.0.json'));
     //var data = {"foo": 1, "bar": 2}
@@ -75,7 +77,7 @@ function formatOption(currentWindow, currentTextEditor) {
             console.log(selection);
             if (selection == 'Yes') {
                 currentWindow.showInformationMessage('Finxact JSON Formater v2.0.0');
-                finxactIt(currentTextEditor);
+                finFormat(currentTextEditor);
             }
         });
     }
