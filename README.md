@@ -23,6 +23,7 @@ This is an extension for VSCode to assist with Finxact JSON file writing.
     - [Boilerplate](#BOILERPLATE.json)
     - [Blank](#BLANK.json)
     - [Adding Templates](#Adding-Templates)
+    - [Template variables](#Template-variables)
 - [Snippets](#Snippets)
 - [Special formatting](#Special-formatting)
 
@@ -78,10 +79,10 @@ Finxat commands can be used through the Command Palette (`F1`).
 
 ## File Templates
 
-To help just start writing of a Finxact JSON schema file you can create a new file using templates located in the Finxact JSON Formatter's `/templates` folder. The extension currently has two templates: `BLANK.json` and `BOILERPLAT.json`. YOu can also create your own template and copy it in the `/templates/` to use with the extention.
+To help just start writing of a Finxact JSON schema file you can create a new file using templates located in the Finxact JSON Formatter's `/templates` folder. The extension currently has two templates: `BLANK.json` and `BOILERPLAT.json`.
 
 #### BOILERPLATE.json
-
+Using predefined variables general values are added the newly created file. See [Template variables](#Template-variables).
 ```
     "$schema": "http://json-schema.org/draft-04/schema#",
          "id": "http://finxact.com/.../${FILE}",
@@ -95,7 +96,6 @@ To help just start writing of a Finxact JSON schema file you can create a new fi
 
 #### BLANK.json
 This file can also be used for a base for create a custom template.
-
 ```
     "$schema": "http://json-schema.org/draft-04/schema#",
          "id": "",
@@ -108,17 +108,16 @@ This file can also be used for a base for create a custom template.
 ```
 
 ### Adding Templates
+You can create your own template files and copy it in the `/templates/` to use with the extention. Any type of text file can be used as a template but it's recommened to use the file extention for the type of template file you are wanted to create. 
 
-#### Predefined variables
+#### Template file naming
+Template file name should use either an underscore or dash separate parts of the name or CamelCase. This help insure the file change be listed as a template.
+
+#### Template variables
 The following are predefined template variables currently supported:
 - `${AUTHOR}` - System username (Windows 10 returns first name of owners account)
 - `${DATE}` - Current system date in ISO Date Format
 - `${FILE}` - Name of created file
-
-
-
-
-
 
 
 ## Snippets
