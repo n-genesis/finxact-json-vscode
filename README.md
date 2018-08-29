@@ -165,11 +165,10 @@ The following array valuesbegin on a newline.
 
 ## Versions
 
-### 1.5
-- New file templates
-- New Finxact json schema `key:value` snippets ex. finObj (Object with title and description key:values)
 
 ### 1.0
+- New file templates
+- New Finxact json schema `key:value` snippets ex. finObj (Object with title and description key:values)
 - Indentation now starts at column 20 (better closing bracket alignment)
 - Closing bracket alignment equally reduced by tab
 - Include Finxact json schema key name snippets
