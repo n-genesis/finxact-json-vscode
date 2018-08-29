@@ -82,10 +82,13 @@ Finxat commands can be used through the Command Palette (`F1`).
 ### JSON Validation
 - To be included
 
-
 ## File Templates
 
 To help just start writing of a Finxact JSON schema file you can create a new file using templates located in the Finxact JSON Formatter's `/templates` folder. The extension currently has two templates: `BLANK.json` and `BOILERPLAT.json`.
+
+### New File
+To create a new file using a template, right click on the Explorer and select **"New File (Finxact)"**.
+![context menu](https://drive.google.com/uc?export=view&id=13O0mmVNQsXlsFxayNSKoYAItrHmN_JwB)
 
 #### BOILERPLATE.json
 Using predefined variables general values are added the newly created file. See [Template variables](#Template-variables).
@@ -131,7 +134,7 @@ The following variables can be set in your Workspace Settings. To learn how to e
 - `${SCHEMA_URL}` - $schema URL else `"http://json-schema.org/draft-04/schema#"` if not set
 - `${ID_URL}` - `id` value else `"http://finxact.com/.../{FILENAME}"` if not set
 
-![](https://drive.google.com/uc?export=view&id=1NnBU0CwN8q4RPVlW6MM2MT45HmzmyX5K)
+![settings](https://drive.google.com/uc?export=view&id=1NnBU0CwN8q4RPVlW6MM2MT45HmzmyX5K)
 
 ## Snippets
 The follwoing are a list of snippets for assistance with Finxact JSON file writing.
