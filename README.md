@@ -40,7 +40,7 @@ Linux ~/.vscode/extensions
 ```
 
 
-> **Hidden folders:** You may need need to change you file explorer's settings to show hidden files before seeing the `.vscode` directory.
+> **Hidden folders:** You may need need to change your file explorer's settings to show hidden files before seeing the `.vscode` directory.
 
 ### Clone or Download
 
@@ -86,7 +86,7 @@ Finxat commands can be used through the Command Palette (`F1`).
 
 ## File Templates
 
-To help just start writing of a Finxact JSON schema file you can create a new file using templates located in the Finxact JSON Formatter's `/templates` folder.
+To help just start writing a Finxact JSON schema file you can create a new file from a templates located in the Finxact JSON Formatter's `/templates` folder.
 
 ### Included Templates
 The extension currently has two templates: `BLANK.json` and `BOILERPLAT.json`. Using predefined variables, general values are added the newly created file. See [Template variables](#Template-variables).
