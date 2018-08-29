@@ -7,10 +7,10 @@
 			" \"description\": \"${3:value}\"$4",
 			"}$0"
 		],
-		"description": "Finxact Object"
+		"description": "Finxact Object + title + description"
 	},
 
-	"Fin-JSON-prop": {
+	"Fin-JSON.prop": {
 		"prefix": "finPropObj",
 		"body": [
 			"\"${1:properties}\": {",
@@ -121,24 +121,23 @@
 		"prefix": "finChoices",
 		"body": [
 			"\"choices\": [",
-			"         [",
-			"        [${1:int},${2:\"string\"}],",
-			"    ]",
-			"    $0",
-			"]"
+			"       [${1:int},\"${2:string}\"]$0",
+			"  ]"
 		],
 		"description": "Finxact choices array"
 	},
 
-	"Fin-JSON.createArray": {
-		"prefix": "array",
+	"Fin-JSON.arraySpecForm": {
+		"prefix": "finArraySpecForm",
 		"body": [
-			"[",
-			"    ${1:<key>},",
-			"    \"${2:<value>}\"",
-			"],",
-			"$0"
+			"\"${1|allOf,choices,x-choices,foreignKeys,serialize,indexes,contextValues,computeds,oneOf|}\": [",
+			"                {",
+			"              \"${2:keyname}\": \"${3:value}\"$4",
+			"                }$5",
+			"]$0"
 		],
-		"description": "Create JSON array"
+		"description": "Finxact Array value with special formatting"
 	}
+
+
 }
