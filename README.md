@@ -88,6 +88,7 @@ To help just start writing of a Finxact JSON schema file you can create a new fi
 
 ### New File
 To create a new file using a template, right click on the Explorer and select **"New File (Finxact)"**.
+
 ![context menu](https://drive.google.com/uc?export=view&id=13O0mmVNQsXlsFxayNSKoYAItrHmN_JwB)
 
 #### BOILERPLATE.json
