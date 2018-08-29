@@ -47,9 +47,11 @@ Linux ~/.vscode/extensions
 #### Using Git (terminal)
 
 1. Navigate to `.vscode/extension/` and while in the directory clone the repo.
+
 `git clone https://USERNAME@bitbucket.org/finxact/vs-code.git`
 
 2. After cloning a `vs-code` folder is created. Rename the folder to `fin-format`.
+
 `sudo mv vs-code fin-format`
 
 3. Relaod VS Code for the extension to be added.
