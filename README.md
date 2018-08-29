@@ -1,4 +1,4 @@
-<img align="right" alt="Ajv logo" width="160" src="https://drive.google.com/uc?export=view&id=1HzLZBHfnA4EGwxeCZayRynpff2PE840P">
+<img align="right" alt="Ajv logo" width="160" src="https://drive.google.com/uc?export=view&id=1HzLZBHfnA4EGwxeCZayRynpff2PE840P"/>
 
 # Finxact JSON Formatter
 
