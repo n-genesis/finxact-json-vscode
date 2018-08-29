@@ -155,12 +155,10 @@ The following array valuesbegin on a newline.
 
 - allOf
 - choices
-- choice (is used in some json files)
 - x-choices
 - foreignKeys
 - serialize
 - indexes
-- allof
 - contextValues
 - computeds
 - oneOf
@@ -175,6 +173,3 @@ The following array valuesbegin on a newline.
 - Indentation now starts at column 20 (better closing bracket alignment)
 - Closing bracket alignment equally reduced by tab
 - Include Finxact json schema key name snippets
-
-## Fixes
-- Formatting sometimes copys previously formatted text in current JSON file.
