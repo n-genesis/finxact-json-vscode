@@ -123,7 +123,7 @@ To create a new file using a template, right click on the Explorer and select **
 ![context menu](https://drive.google.com/uc?export=view&id=13O0mmVNQsXlsFxayNSKoYAItrHmN_JwB)
 
 ### Adding Templates
-You can create your own template files and copy it in the `/templates/` to use with the extention. Any type of text file can be used as a template but it's recommened to use the file extention for the type of template file you are wanted to create. 
+You can create your own template files and copy it in the `/templates` to use with the extention. Any type of text file can be used as a template but it's recommened to use the file extention for the type of template file you are wanted to create. 
 
 #### File naming
 Template file name should use either an underscore or dash separate parts of the name or CamelCase. This help insure the file change be listed as a template.
