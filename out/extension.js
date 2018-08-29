@@ -23,10 +23,10 @@ function activate(context) {
         //vscode.commands.executeCommand('editor.action.insertLineAfter')
         finFormat();
     });
-    let finValidate = vscode.commands.registerCommand('extension.finValidate', () => {
+    let finValidate = vscode.commands.registerCommand('extension.finxactValidate', () => {
         //jsonValidate(currentTextEditor.document.getText());
         //vscode.commands.executeCommand("workbench.debug.action.toggleRepl");
-        console.info("Active From Foo");
+        console.info("This feature is in development");
         //currentWindow.showInformationMessage("Avtive from Foo");
     });
     let finxactNewFile = vscode.commands.registerCommand('extension.finxactJSONTemplate', newFileFromTemplate); // Create file from template
