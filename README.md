@@ -15,7 +15,7 @@ This is an extension for VSCode to assist with Finxact JSON file writing.
 - [Installation](#Installation)
     - [Clone or Download](#Clone-or-Download)
 - [Using the Extension](#Using-the-Extension)
-    - [KeyBindings](#KeyBindings)
+    - [Menu and KeyBindings](#Menu-and-KeyBindings)
     - [Format Commands](#Format-Commands)
     - [JSON Validation](#JSON-Validation)
 - [File Templates](#File-Templates)
@@ -64,8 +64,8 @@ You can download a zip file from [Google Drive](https://drive.google.com/drive/f
 
 ## Using the Extension
 
-### KeyBindings
-To format a JSON file simply Right click and select "Finxact JSON Format" option or use:
+### Menu and KeyBindings
+To format a JSON file you can either right click and select "Finxact JSON Format" or use:
 
 - Windows + Linux: `ctrl+alt+p`
 - Mac: `cmd+alt+p`
