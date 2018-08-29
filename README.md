@@ -20,8 +20,8 @@ This is an extension for VSCode to assist with Finxact JSON file writing.
     - [JSON Validation](#JSON-Validation)
 - [File Templates](#File-Templates)
     - [Included Templates](#Included-Templates)
-    - [Boilerplate](#BOILERPLATE.json)
-    - [Blank](#BLANK.json)
+        - [Boilerplate](#BOILERPLATE.json)
+        - [Blank](#BLANK.json)
     - [Adding Templates](#Adding-Templates)
     - [File naming](#File-naming)
     - [Template variables](#Template-variables)
@@ -36,6 +36,7 @@ Windows %USERPROFILE%\.vscode\extensions
 Mac ~/.vscode/extensions
 Linux ~/.vscode/extensions
 ```
+
 
 > **Hidden folders:** You may need need to change you file explorer's settings to show hidden files before seeing the `.vscode` directory.
 
@@ -75,6 +76,7 @@ To format a JSON file simply Right click and select "Finxact JSON Format" option
 ### Commands
 
 Finxat commands can be used through the Command Palette (`F1`).
+
 - To be included
 
 ### JSON Validation
