@@ -128,13 +128,14 @@ The following are predefined template variables currently supported:
 
 The following variables can be set in your Workspace Settings. To learn how to edit your setting see visit [User and Workspace Settings](https://code.visualstudio.com/docs/getstarted/settings) on the Visual Studio Code website.
 
-- `${SCHEMA_URL}` - $schema URL else `http://json-schema.org/draft-04/schema#` if not set
-- `${ID_URL}` - `id` value else `http://finxact.com/.../{FILENAME}` if not set
+- `${SCHEMA_URL}` - $schema URL else `"http://json-schema.org/draft-04/schema#"` if not set
+- `${ID_URL}` - `id` value else `"http://finxact.com/.../{FILENAME}"` if not set
 
 
 
 ## Snippets
 The follwoing are a list of snippets for assistance with Finxact JSON file writing.
+
 - To be included
 
 ## Special formatting
