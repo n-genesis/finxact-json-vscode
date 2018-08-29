@@ -13,16 +13,16 @@ This is an extension for VSCode to assist with Finxact JSON file writing.
 
 ### Contents
 - [Installation](#Installation)
-  - [Clone or Download](#Clone-or-Download)
+    - [Clone or Download](#Clone-or-Download)
 - [Using the Extension](#Using-the-Extension)
-  - [KeyBindings](#KeyBindings)
-  - [Format Commands](#Format-Commands)
-  - [JSON Validation](#JSON-Validation)
+    - [KeyBindings](#KeyBindings)
+    - [Format Commands](#Format-Commands)
+    - [JSON Validation](#JSON-Validation)
 - [File Templates](#File-Templates)
-  - [Included Templates](#Included-Templates)
+    - [Included Templates](#Included-Templates)
     - [Boilerplate](#BOILERPLATE.json)
     - [Blank](#BLANK.json)
-  - [Adding Templates](#Adding-Templates)
+    - [Adding Templates](#Adding-Templates)
 - [Snippets](#Snippets)
 - [Special formatting](#Special-formatting)
 
