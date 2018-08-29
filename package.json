@@ -3,10 +3,10 @@
     "displayName": "Finxact json schema formatter",
     "description": "Format json files using Finxact JSON schema",
     "version": "1.0.0",
-    "publisher": "andrewgarber",
+    "publisher": "Finxact",
     "icon": "images/icon.png",
     "engines": {
-        "vscode": "^1.5.0"
+        "vscode": "^1.0.0"
     },
     "categories": [
         "Formatters",
@@ -16,7 +16,8 @@
         "onLanguage:json",
         "onCommand:extension.finxactFormat",
         "onCommand:extension.finxactValidate",
-        "onCommand:extension.finxactJSONTemplate"
+        "onCommand:extension.finxactJSONTemplate",
+        "onCommand:extension.finxactQuickFormat"
     ],
     "main": "./out/extension",
     "contributes": {
@@ -24,10 +25,20 @@
 			"type": "object",
 			"title": "Finxact Templates Configuration",
 			"properties": {
-				"finxactTemplates.Author": {
+                "finxactTemplates.SchemaUrl": {
+                    "type": "string",
+                    "default": "http://json-schema.org/draft-04/schema#",
+                    "definitions": "JSON Schema Validation URL"
+                },
+                "finxactTemplates.IdUrl": {
 					"type": "string",
-					"default": "Author",
-					"description": "Author of the file"
+					"default": "http://finxact.com/...",
+					"description": "id value RUL"
+                },
+                "finxactTemplates.Desc": {
+					"type": "string",
+					"default": "Description for object",
+					"description": "Description value"
 				}
 			}
 		},
@@ -37,12 +48,12 @@
                 "title": "Finxact JSON Format"
             },
             {
-                "command": "extension.finValidate",
+                "command": "extension.finxactValidate",
                 "title": "Finxact shcema validation"
             },
             {
                 "command": "extension.finxactJSONTemplate",
-                "title": "New JSON File (Finxact)"
+                "title": "New File (Finxact)"
             }
         ],
         "keybindings": [
@@ -68,7 +79,7 @@
             "explorer/context": [
 				{
 					"command": "extension.finxactJSONTemplate",
-					"group": "format"
+					"group": "files"
                 }
 			]
         },
@@ -79,13 +90,6 @@
             }
         ]
     },
-    "grammars": [
-        {
-            "language": "jsont",
-            "scopeName": "text.html.jsont",
-            "path": "./syntaxes/jsont.tmLanguage"
-        }
-    ],
     "jsonValidation": [
         {
             "fileMatch": ".json",
@@ -104,5 +108,10 @@
         "vscode": "^1.1.6",
         "@types/node": "^7.0.43",
         "@types/mocha": "^2.2.42"
-    }
+    },
+    "dependencies": {
+    
+    },
+    "author": "Andrew Garber",
+   "license": "UNLICENSED"
 }
