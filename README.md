@@ -77,9 +77,11 @@ To format a JSON file you can either right click and select "Finxact JSON Format
 
 ### Commands
 
-Finxat commands can be used through the Command Palette (`F1`).
+Finxat commands can be used through the Command Palette (`F1`). Type `Fin` and you will see the following selectable options
 
-- To be included
+- Finxact JSON Format - format current file
+- Finxact shcema validation - (in-dev)
+- New File (Finxact) - Create a new file from template
 
 ### JSON Validation
 - To be included
@@ -116,7 +118,6 @@ This file can also be used as a base for create a new template.
  "x-updateDt": "",
  "x-updateBy": ""
 ```
-
 
 ### New File From Template
 To create a new file using a template, right click on the Explorer and select **"New File (Finxact)"**. The command pallete display a list of templates to choose from. Select the template then enter the file name. **Please note the `.json` does not need to be included.**
@@ -174,3 +175,6 @@ The following array valuesbegin on a newline.
 - Indentation now starts at column 20 (better closing bracket alignment)
 - Closing bracket alignment equally reduced by tab
 - Include Finxact json schema key name snippets
+
+### Fixes
+- Formatting of empty objects will cause the closing bracket to be removed 
