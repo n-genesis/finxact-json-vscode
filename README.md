@@ -23,6 +23,7 @@ This is an extension for VSCode to assist with Finxact JSON file writing.
     - [Included Templates](#Included-Templates)
         - [Boilerplate](#BOILERPLATE.json)
         - [Blank](#BLANK.json)
+    - [New File From Template](#New-File-From-Template)
     - [Adding Templates](#Adding-Templates)
     - [File naming](#File-naming)
     - [Template variables](#Template-variables)
@@ -85,7 +86,11 @@ Finxat commands can be used through the Command Palette (`F1`).
 
 ## File Templates
 
-To help just start writing of a Finxact JSON schema file you can create a new file using templates located in the Finxact JSON Formatter's `/templates` folder. The extension currently has two templates: `BLANK.json` and `BOILERPLAT.json`.
+To help just start writing of a Finxact JSON schema file you can create a new file using templates located in the Finxact JSON Formatter's `/templates` folder.
+
+### Included Templates
+The extension currently has two templates: `BLANK.json` and `BOILERPLAT.json`.
+
 
 #### BOILERPLATE.json
 Using predefined variables, general values are added the newly created file. See [Template variables](#Template-variables).
@@ -113,7 +118,7 @@ This file can also be used as a base for create a new template.
  "x-updateBy": ""
 ```
 
-### New File
+### New File From Template
 To create a new file using a template, right click on the Explorer and select **"New File (Finxact)"**.
 
 ![context menu](https://drive.google.com/uc?export=view&id=13O0mmVNQsXlsFxayNSKoYAItrHmN_JwB)
