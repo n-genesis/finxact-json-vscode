@@ -117,6 +117,7 @@ This file can also be used as a base for create a new template.
  "x-updateBy": ""
 ```
 
+
 ### New File From Template
 To create a new file using a template, right click on the Explorer and select **"New File (Finxact)"**. The command pallete display a list of templates to choose from. Select the template then enter the file name. **Please note the `.json` does not need to be included.**
 
