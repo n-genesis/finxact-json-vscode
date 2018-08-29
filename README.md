@@ -45,10 +45,12 @@ Linux ~/.vscode/extensions
 ```
 git clone https://USERNAME@bitbucket.org/finxact/vs-code.git
 ```
+
 2. After cloning a `vs-code` folder is created. Rename the folder to `fin-format`.
 ```
 sudo mv vs-code fin-format
 ```
+
 3. Relaod VS Code for the extension to be added.
 
 #### Google Drive
@@ -116,6 +118,7 @@ Template file name should use either an underscore or dash separate parts of the
 
 #### Template variables
 The following are predefined template variables currently supported:
+
 - `${AUTHOR}` - System username (Windows 10 returns first name of owners account)
 - `${DATE}` - Current system date in ISO Date Format
 - `${FILE}` - Name of created file
