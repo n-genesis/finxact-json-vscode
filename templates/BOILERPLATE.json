@@ -1,8 +1,8 @@
 {
-          "$schema": "http://json-schema.org/draft-04/schema#",
-               "id": "http://finxact.com/.../${FILE}",
-            "title": "",
-      "description": "",
+          "$schema": "${SCHEMA_URL}",
+               "id": "${FILE_URL}",
+            "title": "${TITLE}",
+      "description": "${DESCRIPTION}",
        "x-createDt": "${DATE}",
        "x-createBy": "${AUTHOR}",
        "x-updateDt": "",
