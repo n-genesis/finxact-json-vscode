@@ -6,7 +6,7 @@
     "publisher": "andrewgarber",
     "icon": "images/icon.png",
     "engines": {
-        "vscode": "^1.0.0"
+        "vscode": "^1.5.0"
     },
     "categories": [
         "Formatters",
@@ -15,10 +15,22 @@
     "activationEvents": [
         "onLanguage:json",
         "onCommand:extension.finxactFormat",
-        "onCommand:extension.finxactValidate"
+        "onCommand:extension.finxactValidate",
+        "onCommand:extension.finxactJSONTemplate"
     ],
     "main": "./out/extension",
     "contributes": {
+        "configuration": {
+			"type": "object",
+			"title": "Finxact Templates Configuration",
+			"properties": {
+				"finxactTemplates.Author": {
+					"type": "string",
+					"default": "Author",
+					"description": "Author of the file"
+				}
+			}
+		},
         "commands": [
             {
                 "command": "extension.finxactFormat",
@@ -27,6 +39,10 @@
             {
                 "command": "extension.finValidate",
                 "title": "Finxact shcema validation"
+            },
+            {
+                "command": "extension.finxactJSONTemplate",
+                "title": "New JSON File (Finxact)"
             }
         ],
         "keybindings": [
@@ -46,9 +62,15 @@
                 {
                     "when": "resourceLangId == json",
                     "command": "extension.finxactFormat",
-                    "group": "navigation"
+                    "group": "format"
                 }
-            ]
+            ],
+            "explorer/context": [
+				{
+					"command": "extension.finxactJSONTemplate",
+					"group": "format"
+                }
+			]
         },
         "snippets": [
             {

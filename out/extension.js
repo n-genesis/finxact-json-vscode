@@ -6,12 +6,14 @@ var finJSONSchema = require('finxact-json');
 //Global prop
 var currentWindow = vscode.window;
 var currentTextEditor = currentWindow.activeTextEditor;
-//File templates commands
-//const editTemplate = require('./commands/edittemplate');
-//const newTemplate = require('./commands/newtemplate');
-//const newFileFromTemplate = require('./commands/newfilefromtemplate');
+//File utilities commands
+const newFileFromTemplate = require('../utils/newfilefromtemplate');
+console.log(newFileFromTemplate);
 //var Ajv = require('ajv');
 //var ajv = new Ajv({allErrors: true});
+function FooBar(info) {
+    console.log(this);
+}
 function activate(context) {
     // Check to see if is json file
     if (currentWindow && currentTextEditor.document.languageId === 'json') {
@@ -21,7 +23,7 @@ function activate(context) {
     let disposable = vscode.commands.registerCommand('extension.finxactFormat', () => {
         finFormat(currentTextEditor);
     });
-    let disposable2 = vscode.commands.registerCommand('extension.finxactQuickFormat', () => {
+    let quickFormat = vscode.commands.registerCommand('extension.finxactQuickFormat', () => {
         //vscode.commands.executeCommand('editor.action.insertLineAfter')
         //currentWindow.showInformationMessage("Just for testing");
         finFormat(currentTextEditor);
@@ -32,7 +34,8 @@ function activate(context) {
         console.info("Active From Foo");
         //currentWindow.showInformationMessage("Avtive from Foo");
     });
-    context.subscriptions.push(disposable, disposable2, finValidate);
+    let foo = vscode.commands.registerCommand('extension.finxactJSONTemplate', newFileFromTemplate);
+    context.subscriptions.push(disposable, quickFormat, finValidate, foo);
 }
 exports.activate = activate;
 //Combine everything into one thing Works for now

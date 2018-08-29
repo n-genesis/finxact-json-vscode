@@ -156,5 +156,3 @@ The following array valuesbegin on a newline.
 - Indentation now starts at column 20 (better closing bracket alignment)
 - Closing bracket alignment equally reduced by tab
 - Include Finxact json schema key name snippets
-#### Fix
-- Values for Objects with key names indented is current level plus 1 
