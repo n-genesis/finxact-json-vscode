@@ -35,6 +35,7 @@ Windows %USERPROFILE%\.vscode\extensions
 Mac ~/.vscode/extensions
 Linux ~/.vscode/extensions
 ```
+
 > **Hidden folders:** You may need need to change you file explorer's settings to show hidden files before seeing the `.vscode` directory.
 
 ### Clone or Download
