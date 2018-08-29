@@ -23,6 +23,7 @@ This is an extension for VSCode to assist with Finxact JSON file writing.
     - [Boilerplate](#BOILERPLATE.json)
     - [Blank](#BLANK.json)
     - [Adding Templates](#Adding-Templates)
+    - [File naming](#File-naming)
     - [Template variables](#Template-variables)
 - [Snippets](#Snippets)
 - [Special formatting](#Special-formatting)
@@ -98,7 +99,7 @@ Using predefined variables general values are added the newly created file. See 
 ```
 
 #### BLANK.json
-This file can also be used for a base for create a custom template.
+This file can also be used as a base for create a new template.
 ```
     "$schema": "http://json-schema.org/draft-04/schema#",
          "id": "",
@@ -113,7 +114,7 @@ This file can also be used for a base for create a custom template.
 ### Adding Templates
 You can create your own template files and copy it in the `/templates/` to use with the extention. Any type of text file can be used as a template but it's recommened to use the file extention for the type of template file you are wanted to create. 
 
-#### Template file naming
+#### File naming
 Template file name should use either an underscore or dash separate parts of the name or CamelCase. This help insure the file change be listed as a template.
 
 #### Template variables
