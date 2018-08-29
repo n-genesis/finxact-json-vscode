@@ -104,17 +104,24 @@
 		"description": "Finxact type:number + maxLength"
 	},
 
-	"Fin-JSON.null": {
-		"prefix": "finNull",
+	"Fin-JSON.array": {
+		"prefix": "finTypeArray",
 		"body": [
-			"\"choices\": [",
-			"         [",
-			"        [${1:int},${2:\"string\"}],",
-			"    ]",
-			"    $0",
-			"]"
+			"\"type\" : \"array\",",
+			"\"${1:items}\": {",
+			"       $2",
+			"},",
+			"\"minItems\" : ${3:int}$0"
 		],
-		"description": "Finxact choices array"
+		"description": "Finxact Object + title + description"
+	},
+
+	"Fin-JSON.genKey": {
+		"prefix": "finGenKey",
+		"body": [
+			"\"${1|minimum,maximum,minLength,maxLength,format,default,decimal,required,indexKey|}\": ${2:value}$0"
+		],
+		"description": "Finxact general key/value pair"
 	},
 
 	"Fin-JSON.choices": {
