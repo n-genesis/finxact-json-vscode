@@ -122,9 +122,15 @@ Template file name should use either an underscore or dash separate parts of the
 #### Template variables
 The following are predefined template variables currently supported:
 
-- `${AUTHOR}` - System username (Windows 10 returns first name of owners account)
+- `${AUTHOR}` - System username (Windows 10 returns first name of owners account) or Workspace Setting value if not set
 - `${DATE}` - Current system date in ISO Date Format
 - `${FILE}` - Name of created file
+
+The following variables can be set in your Workspace Settings. To learn how to edit your setting see visit [User and Workspace Settings](https://code.visualstudio.com/docs/getstarted/settings) on the Visual Studio Code website.
+
+- `${SCHEMA_URL}` - $schema URL else `http://json-schema.org/draft-04/schema#` if not set
+- `${ID_URL}` - `id` value else `http://finxact.com/.../{FILENAME}` if not set
+
 
 
 ## Snippets
