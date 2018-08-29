@@ -131,7 +131,7 @@ The following variables can be set in your Workspace Settings. To learn how to e
 - `${SCHEMA_URL}` - $schema URL else `"http://json-schema.org/draft-04/schema#"` if not set
 - `${ID_URL}` - `id` value else `"http://finxact.com/.../{FILENAME}"` if not set
 
-
+![](https://drive.google.com/uc?export=view&id=1NnBU0CwN8q4RPVlW6MM2MT45HmzmyX5K)
 
 ## Snippets
 The follwoing are a list of snippets for assistance with Finxact JSON file writing.
