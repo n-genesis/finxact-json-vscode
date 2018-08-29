@@ -89,11 +89,10 @@ Finxat commands can be used through the Command Palette (`F1`).
 To help just start writing of a Finxact JSON schema file you can create a new file using templates located in the Finxact JSON Formatter's `/templates` folder.
 
 ### Included Templates
-The extension currently has two templates: `BLANK.json` and `BOILERPLAT.json`.
+The extension currently has two templates: `BLANK.json` and `BOILERPLAT.json`. Using predefined variables, general values are added the newly created file. See [Template variables](#Template-variables).
 
 
 #### BOILERPLATE.json
-Using predefined variables, general values are added the newly created file. See [Template variables](#Template-variables).
 ```
     "$schema": "${SCHEMA_URL}",
          "id": "${FILE_URL}",
