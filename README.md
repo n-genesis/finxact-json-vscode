@@ -1,4 +1,5 @@
 # Finxact JSON Extension
+
 This is an extension for VSCode to assist with Finxact JSON file writing.
 
 ## Screenshot
