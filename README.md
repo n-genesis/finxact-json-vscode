@@ -1,4 +1,4 @@
-# Finxact JSON Formatter
+# Finxact JSON Extension
 
 This is an extension for VSCode to assist with Finxact JSON file writing.
 
@@ -45,18 +45,25 @@ Linux ~/.vscode/extensions
 
 ### Clone or Download
 
-#### Using Git (terminal)
+#### Using BitBucket (terminal)
 
-1. Navigate to `.vscode/extension/` and while in the directory clone the repo. `git clone https://USERNAME@bitbucket.org/finxact/vs-code.git`.
+1. Navigate to `.vscode/extension` and while in the directory clone the repo. `git clone https://USERNAME@bitbucket.org/finxact/vs-code.git`.
 
 2. After cloning a `vs-code` folder is created. Rename the folder to `finxact-formatter` using the command `sudo mv vs-code fin-format`.
 
 3. Relaod VS Code for the extension to be added.
 
+
+#### Using GitHub (terminal)
+
+1. Navigate to `.vscode/extension` and while in the directory clone the repo. `git clone https://github.com/n-genesis/finxact-json-vscode.git`.
+
+2. Relaod VS Code for the extension to be added.
+
 #### Google Drive
 You can download a zip file from [Google Drive] (https://drive.google.com/file/d/1BJUsxy6nX6W_dyxLRud2n1HjqCDc3tji/view?usp=sharing).
 
-1. After downloading the zip file cut and past it to `.vscode/extension/`.
+1. After downloading the zip file cut and past it to `.vscode/extension`.
 2. Unzip the file while still in `extension/` folder.
 3. Relaod VS Code for the extension to be added.
 
