@@ -32,8 +32,8 @@
                 },
                 "finxactTemplates.IdUrl": {
 					"type": "string",
-					"default": "http://finxact.com/...",
-					"description": "id value RUL"
+					"default": "http://finxact.com/",
+					"description": "id value URL"
                 },
                 "finxactTemplates.Desc": {
 					"type": "string",
