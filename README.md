@@ -10,7 +10,6 @@ This is an extension for VSCode to assist with Finxact JSON file writing.
 - Validate JSON file (in dev)
 
 
-
 ### Contents
 - [Installation](#installation)
     - [Clone or Download](#clone-or-download)
