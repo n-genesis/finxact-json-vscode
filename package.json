@@ -32,7 +32,7 @@
                 },
                 "finxactTemplates.IdUrl": {
 					"type": "string",
-					"default": "http://finxact.com/",
+					"default": "http://finxact.com/...",
 					"description": "id value URL"
                 },
                 "finxactTemplates.Desc": {
