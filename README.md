@@ -40,6 +40,7 @@ Mac ~/.vscode/extensions
 Linux ~/.vscode/extensions
 ```
 
+
 > **Hidden folders:** You may need need to change your file explorer's settings to show hidden files before seeing the `.vscode` directory.
 
 ### Clone or Download
