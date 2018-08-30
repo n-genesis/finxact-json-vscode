@@ -11,9 +11,11 @@ const newFileFromTemplate = require('../utils/newfilefromtemplate');
 //var Ajv = require('ajv');
 //var ajv = new Ajv({allErrors: true});
 function activate(context) {
-    if (currentWindow && currentTextEditor.document.languageId === 'json') {
+    /*Causing error
+    if (currentWindow && currentTextEditor.document.languageId === 'json') {// Is file .json
         //Condition not used
     }
+    */
     //Lets create a keybinding function
     let format = vscode.commands.registerCommand('extension.finxactFormat', () => {
         finFormat();
@@ -68,7 +70,7 @@ function jsonValidate(data) {
     //if (valid) console.log('Valid!');
     //else console.log('Invalid: ' + ajv.errorsText(validate.errors));
 }
-//Check for current window and if the file type is JSON
+/*Check for current window and if the file type is JSON*/
 function formatOption(currentWindow, currentTextEditor) {
     if (currentWindow && currentTextEditor.document.languageId === 'json') {
         vscode.window.showInformationMessage('Do you want to first default format this JSON?', { modal: null }, 'Yes', 'No', 'Hide').then(selection => {
