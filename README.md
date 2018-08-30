@@ -147,7 +147,7 @@ To learn how to edit your setting see visit [User and Workspace Settings](https:
 ## Snippets
 The follwoing are a list of snippets for assistance with Finxact JSON file writing.
 
-- To be included
+- Snippet list to be included
 
 ## Special formatting
 The following array valuesbegin on a newline.
