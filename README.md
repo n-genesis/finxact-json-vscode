@@ -53,7 +53,7 @@ Linux ~/.vscode/extensions
 3. Relaod VS Code for the extension to be added.
 
 #### Google Drive
-You can download a zip file from [Google Drive](https://drive.google.com/file/d/1BJUsxy6nX6W_dyxLRud2n1HjqCDc3tji/view?usp=sharing).
+You can download a zip file from [Google Drive] (https://drive.google.com/file/d/1BJUsxy6nX6W_dyxLRud2n1HjqCDc3tji/view?usp=sharing).
 
 1. After downloading the zip file cut and past it to `.vscode/extension/`.
 2. Unzip the file while still in `extension/` folder.
