@@ -74,11 +74,11 @@ function createFile(filepath, data = '', extension = '') {
                         vscode.window.showErrorMessage('Cannot create new file');
                         return;
                     }
-                    /**/
+                    /*
                     vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('file:///' + newFilePath)).then(() => {
                         console.log('Document opened');
                     });
-                    
+                    */
                 });
             });
         });
