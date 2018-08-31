@@ -121,7 +121,7 @@ This file can also be used as a base for create a new template.
 ```
 
 ### New File From Template
-To create a new file using a template, right click on the Explorer and select **"New File (Finxact)"**. The command pallete display a list of templates to choose from. Select the template then enter the file name. **Please note the `.json` does not need to be included.**
+To create a new file using a template, right click on the Explorer and select **"New File (Finxact)"**. The command pallete will then display a list of templates to choose from. Select the template then enter the file name. **Please note the `.json` does not need to be included.**
 
 ![context menu](https://drive.google.com/uc?export=view&id=1fYKiZXcOc2-GmSAI5fSDLUZYG3zrDLaS)
 
