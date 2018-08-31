@@ -134,11 +134,11 @@ Template file name should use either an underscore or dash separate parts of the
 #### Template variables
 The following are predefined template variables currently supported:
 
-- `${AUTHOR}` - System username (Windows 10 returns first name of owners account) or Workspace Setting value if set
+- `${AUTHOR}` - System username (Windows 10 returns first name of owners account)
 - `${DATE}` - Current system date in ISO Date Format
 - `${FILE}` - Name of created file
 
-- `${TITLE}` - `title` value defaults to `"${FILE} Object"` if not set
+- `${TITLE}` - `title` value defaults to `"${FILE} Object"` 
 
 The following variables can be set in your Workspace Settings. 
 
