@@ -6,7 +6,7 @@ This is an extension for VSCode to assist with Finxact JSON file writing.
 ![](https://drive.google.com/uc?export=view&id=1N4oDMsDjzcSXV0vv6lk0AlxeFSkH7HA4)
 
 ## Features
-- Formats JSON files using Finxact JSON schema rules.
+- Formats JSON files using Finxact schema rules.
 - New File templates
 - Validate JSON file (in dev)
 
@@ -138,7 +138,7 @@ The following are predefined template variables currently supported:
 - `${DATE}` - Current system date in ISO Date Format
 - `${FILE}` - Name of created file
 
-- `${TITLE}` - `title` value defaults to `"${FILE} Object"` 
+- `${TITLE}` - `title` value defaults to `"${FILE} Object"`
 
 The following variables can be set in your Workspace Settings. 
 
