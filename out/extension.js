@@ -44,17 +44,17 @@ function finFormat() {
     var newPosition = position.with(position.line, position.character);
     var newSelection = new vscode.Selection(newPosition, newPosition);
     var text = editor.document.getText(); //Format everything
-    var processedText = finJSONSchema(text); //Bad coding all mashed together 
+    var processedText = finJSONSchema.formatStr(text); //Bad coding all mashed together 
     builder = replaceAllContent(text, processedText);
     /*Can be used to text selection formatting*/
     //if (editor.selection.isEmpty) {
     //    var text = editor.document.getText();
-    //    var processedText = finJSONSchema(text);
+    //    var processedText = finJSONSchema.formatStr(text);
     //    builder = replaceAllContent(text, processedText);
     //}else{
     //    editor.selection = newSelection;
     //    var text = editor.document.getText(editor.selection);
-    //    var processedText = finJSONSchema(text);
+    //    var processedText = finJSONSchema.formatStr(text);
     //    builder = replaceSectionContent(text, processedText, editor.selection.start, editor.selection.end); 
     //}
     //Replace editor with formatted text
