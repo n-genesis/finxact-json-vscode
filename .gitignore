@@ -1,6 +1,6 @@
 # ignore an entire directory
 .vscode/
-package-lock.json
+package-lock.json 
 node_modules/ajv
 images/splash.png
 images/fin-format.gif
