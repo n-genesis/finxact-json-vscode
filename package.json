@@ -1,8 +1,8 @@
 {
     "name": "finxact-json-schema",
-    "displayName": "Finxact json schema formatter",
-    "description": "Format json files using Finxact JSON schema",
-    "version": "1.0.0",
+    "displayName": "Finxact json formatter",
+    "description": "Create and format json files using Finxact JSON schema",
+    "version": "1.0.5",
     "publisher": "Finxact",
     "icon": "images/icon.png",
     "engines": {
@@ -10,7 +10,8 @@
     },
     "categories": [
         "Formatters",
-        "Other"
+        "Snippets",
+        "Extension Packs"
     ],
     "activationEvents": [
         "onLanguage:json",
@@ -39,6 +40,25 @@
                     "type": "string",
                     "default": "Description for object",
                     "description": "Description value"
+                },
+                "finxactFormating.SpecielKeyNames": {
+                    "type": "object",
+                    "default": [
+                        "isHappening",
+                        "isGoals",
+                        "isAllOf",
+                        "isChoices",
+                        "isChoice",
+                        "isXchoices",
+                        "isForeignKeys",
+                        "isSerialize",
+                        "isIndexes",
+                        "isAllof",
+                        "isContextValues",
+                        "isComputeds",
+                        "isOneOf"
+                    ],
+                    "description": "Special formating keyname"
                 }
             }
         },
