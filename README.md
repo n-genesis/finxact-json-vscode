@@ -171,11 +171,52 @@ The following array valuesbegin on a newline.
 - computeds
 - oneOf
 
+
+## Rules
+Key:Value combinations
+
+\* **Common key**
+
+\+ **Required**
+
+\- **Not required**
+
+
+Type:
+- Integer
+  - minimum/maximum: int -
+  - minLength/maxLength:int -
+  - format: string -
+    - rate/tguid
+      - default:int - *
+      - decimal:int - *
+- array
+  - Item:{} +
+  - minItems: int +
+- string
+  - minLength/maxLength:int -
+  - format: string -
+    - date, time, date-time, tguid, dur, freq, text, text-area
+- string Array
+  - [string,integer,number,boolean,array,object]
+  - maxLegth:int -
+- number
+  - minimum/maximum:int -
+  - minLength/maxLength:int -
+  - format: string +
+  - rate/currency
+  - decimal:int - *
+- object
+  - $ref: string + * (file name)
+  - property:{} -
+  - allOf: [] -
+- boolean
+  - default:int - *
+- required: [] *
+- indexKey: [string] or {} *
+
+
 ## Versions
-
-### 1.0.5
-- Add Workspace setting to set Special formatting keynames; add newline under key name before value.
-
 
 ### 1.0
 - New file templates
