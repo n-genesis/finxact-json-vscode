@@ -188,8 +188,8 @@ Type:
   - minLength/maxLength:int -
   - format: string -
     - rate/tguid
-      - default:int - *
-      - decimal:int - *
+  - default:int - *
+  - decimal:int - *
 - array
   - Item:{} +
   - minItems: int +
@@ -204,7 +204,7 @@ Type:
   - minimum/maximum:int -
   - minLength/maxLength:int -
   - format: string +
-  - rate/currency
+    - rate/currency
   - decimal:int - *
 - object
   - $ref: string + * (file name)
