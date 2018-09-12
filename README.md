@@ -173,6 +173,10 @@ The following array valuesbegin on a newline.
 
 ## Versions
 
+### 1.0.5
+- Add Workspace setting to set Special formatting keynames; add newline under key name before value.
+
+
 ### 1.0
 - New file templates
 - New Finxact json schema `key:value` snippets ex. finObj (Object with title and description key:values)
