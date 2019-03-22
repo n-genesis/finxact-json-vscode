@@ -2,6 +2,8 @@
 
 This is an extension for VSCode to assist with Finxact JSON file writing.
 
+**Please Note:** Due to an update to VSCode (v1.32.x) this extension may not work as expected. I am currently in the process of editing the extension to work with the updated version.
+
 ## Screenshot
 ![](https://drive.google.com/uc?export=view&id=1N4oDMsDjzcSXV0vv6lk0AlxeFSkH7HA4)
 
